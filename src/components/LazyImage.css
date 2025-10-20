@@ -1,0 +1,254 @@
+/* LazyImage Component Styles */
+
+.lazy-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f8f9fa;
+  border-radius: inherit;
+}
+
+/* Placeholder/Skeleton Loader */
+.lazy-image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.lazy-image-skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeletonLoading 1.5s infinite;
+}
+
+.skeleton-shimmer {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+/* Loading Spinner */
+.lazy-image-loader {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #6c757d;
+}
+
+.loader-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e9ecef;
+  border-top: 3px solid #546736;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loader-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6c757d;
+  font-family: var(--font-family-poppins, 'Inter', sans-serif);
+}
+
+/* Error State */
+.lazy-image-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #f8f9fa;
+  color: #dc3545;
+}
+
+.error-icon {
+  width: 32px;
+  height: 32px;
+  color: #dc3545;
+}
+
+.error-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  font-family: var(--font-family-poppins, 'Inter', sans-serif);
+}
+
+/* Actual Image */
+.lazy-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: all 0.6s ease-out;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Animation Keyframes */
+@keyframes skeletonLoading {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .loader-spinner {
+    width: 32px;
+    height: 32px;
+    border-width: 2px;
+  }
+  
+  .loader-text {
+    font-size: 0.75rem;
+  }
+  
+  .error-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .error-text {
+    font-size: 0.75rem;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .lazy-image-placeholder {
+    background: #ffffff;
+    border: 2px solid #000000;
+  }
+  
+  .loader-spinner {
+    border-color: #cccccc;
+    border-top-color: #000000;
+  }
+  
+  .loader-text {
+    color: #000000;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .lazy-image-skeleton,
+  .skeleton-shimmer,
+  .loader-spinner {
+    animation: none;
+  }
+  
+  .lazy-image {
+    transition: opacity 0.3s ease;
+    transform: none;
+  }
+  
+  .lazy-image.loaded {
+    transform: none;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .lazy-image-container {
+    background: #2c3e50;
+  }
+  
+  .lazy-image-placeholder {
+    background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+  }
+  
+  .lazy-image-skeleton {
+    background: linear-gradient(90deg, #34495e 25%, #3d566e 50%, #34495e 75%);
+  }
+  
+  .skeleton-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent
+    );
+  }
+  
+  .loader-spinner {
+    border-color: #34495e;
+    border-top-color: #546736;
+  }
+  
+  .loader-text {
+    color: #bdc3c7;
+  }
+  
+  .lazy-image-error {
+    background: #2c3e50;
+  }
+}

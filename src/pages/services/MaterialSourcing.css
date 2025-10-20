@@ -1,0 +1,7 @@
+.material-tagline { color: var(--color-primary, #546736); }
+.material-hero-image { box-shadow: 0 20px 40px rgba(84, 103, 54, 0.15); }
+.material-feature-card { box-shadow: 0 4px 12px rgba(84, 103, 54, 0.08); border-top: 3px solid var(--color-primary, #546736); }
+.material-feature-card:hover { box-shadow: 0 12px 30px rgba(84, 103, 54, 0.15); }
+.material-btn-primary { background: linear-gradient(135deg, var(--color-primary, #546736), var(--color-accent, #b8860b)); }
+.material-btn-secondary { color: var(--color-primary, #546736); border: 2px solid var(--color-primary, #546736); }
+.material-btn-secondary:hover { background: var(--color-primary, #546736); }

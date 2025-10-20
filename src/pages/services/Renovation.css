@@ -1,0 +1,35 @@
+/* Renovation Service - Inherits base structure with custom colors */
+
+.renovation-tagline {
+    color: var(--color-secondary, #7c4530);
+}
+
+.renovation-hero-image {
+    box-shadow: 0 20px 40px rgba(124, 69, 48, 0.15);
+}
+
+.renovation-feature-card {
+    box-shadow: 0 4px 12px rgba(124, 69, 48, 0.08);
+    border-top: 3px solid var(--color-secondary, #7c4530);
+}
+
+.renovation-feature-card:hover {
+    box-shadow: 0 12px 30px rgba(124, 69, 48, 0.15);
+}
+
+.renovation-step-number {
+    background: linear-gradient(135deg, var(--color-secondary, #7c4530), var(--color-primary, #546736));
+}
+
+.renovation-btn-primary {
+    background: linear-gradient(135deg, var(--color-secondary, #7c4530), var(--color-primary, #546736));
+}
+
+.renovation-btn-secondary {
+    color: var(--color-secondary, #7c4530);
+    border-color: var(--color-secondary, #7c4530);
+}
+
+.renovation-btn-secondary:hover {
+    background: var(--color-secondary, #7c4530);
+}

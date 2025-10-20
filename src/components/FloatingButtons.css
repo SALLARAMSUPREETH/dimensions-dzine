@@ -1,0 +1,198 @@
+/* Floating Buttons Styles - New Classes */
+.floating-buttons-new {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 60px;
+  height: 130px; /* Fixed height to accommodate both buttons */
+  filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.2));
+}
+
+.floating-buttons-new.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.floating-btn-new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid var(--_primary-colors---dark-brown);
+  color: var(--_primary-colors---dark-brown);
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  /* Ensure perfect circle initially, but allow expansion on hover */
+  min-width: 60px;
+  min-height: 60px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.floating-btn-new:hover {
+  width: 180px;
+  border-radius: 30px;
+  background: var(--_primary-colors---dark-brown);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(124, 69, 48, 0.4);
+  z-index: 1001;
+}
+
+.contact-btn-new {
+  border-color: var(--_primary-colors---olive);
+  color: var(--_primary-colors---olive);
+  background: rgba(255, 255, 255, 0.95);
+  bottom: 70px; /* Position above the top button */
+}
+
+.contact-btn-new:hover {
+  background: var(--_primary-colors---olive);
+  color: white;
+  box-shadow: 0 12px 40px rgba(84, 103, 54, 0.4);
+  z-index: 1001;
+}
+
+.top-btn-new {
+  border-color: var(--_primary-colors---dark-brown);
+  color: var(--_primary-colors---dark-brown);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  bottom: 0; /* Position at the bottom */
+}
+
+.top-btn-new:hover {
+  background: var(--_primary-colors---dark-brown);
+  color: white;
+  box-shadow: 0 12px 40px rgba(124, 69, 48, 0.4);
+  z-index: 1001;
+}
+
+.btn-icon-new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* Ensure icon doesn't affect button shape */
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.floating-btn-new .btn-icon-new svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.floating-btn-new:hover .btn-icon-new {
+  left: 20px;
+  transform: translateX(0) translateY(-50%);
+}
+
+.btn-text-new {
+  position: absolute;
+  right: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  transform: translateX(15px);
+  transition: all 0.4s ease;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  pointer-events: none;
+  top: 50%;
+  transform: translateX(15px) translateY(-50%);
+}
+
+.floating-btn-new:hover .btn-text-new {
+  opacity: 1;
+  transform: translateX(0) translateY(-50%);
+}
+
+/* Responsive Design for Floating Buttons */
+@media (max-width: 768px) {
+  .floating-buttons-new {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 55px;
+    height: 120px;
+  }
+  
+  .floating-btn-new {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    min-height: 55px;
+  }
+  
+  .contact-btn-new {
+    bottom: 65px;
+  }
+  
+  .floating-btn-new:hover {
+    width: 160px;
+  }
+  
+  .btn-icon-new svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-buttons-new {
+    bottom: 1rem;
+    right: 1rem;
+    width: 50px;
+    height: 110px;
+  }
+  
+  .floating-btn-new {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+  }
+  
+  .contact-btn-new {
+    bottom: 60px;
+  }
+  
+  .floating-btn-new:hover {
+    width: 140px;
+  }
+  
+  .btn-icon-new svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  
+  .btn-text-new {
+    font-size: 0.8rem;
+  }
+}

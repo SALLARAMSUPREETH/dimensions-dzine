@@ -1,0 +1,29 @@
+.visualization-tagline {
+    color: var(--color-accent, #b8860b);
+}
+
+.visualization-hero-image {
+    box-shadow: 0 20px 40px rgba(184, 134, 11, 0.15);
+}
+
+.visualization-feature-card {
+    box-shadow: 0 4px 12px rgba(184, 134, 11, 0.08);
+    border-top: 3px solid var(--color-accent, #b8860b);
+}
+
+.visualization-feature-card:hover {
+    box-shadow: 0 12px 30px rgba(184, 134, 11, 0.15);
+}
+
+.visualization-btn-primary {
+    background: linear-gradient(135deg, var(--color-accent, #b8860b), var(--color-secondary, #7c4530));
+}
+
+.visualization-btn-secondary {
+    color: var(--color-accent, #b8860b);
+    border: 2px solid var(--color-accent, #b8860b);
+}
+
+.visualization-btn-secondary:hover {
+    background: var(--color-accent, #b8860b);
+}
