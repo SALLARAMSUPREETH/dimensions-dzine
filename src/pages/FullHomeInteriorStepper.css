@@ -653,11 +653,6 @@
   grid-column: 4;
 }
 
-.accordion-content {
-  background: #f8f6f1;
-  border-top: 2px solid #e0e0e0;
-}
-
 .accordion-open {
   display: block;
 }

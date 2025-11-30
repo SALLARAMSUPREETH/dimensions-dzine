@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 import FloatingButtons from './components/FloatingButtons';
 import ScrollToTop from './components/ScrollToTop';
@@ -82,25 +83,25 @@ function AppContent() {
   );
 }
 
-// Wrapper to provide location to ErrorBoundary key
+// Wrapper to provide ErrorBoundary
 function AppWithErrorBoundary() {
-  const location = useLocation();
-
   return (
-    <ErrorBoundary key={location.pathname}>
+    <ErrorBoundary>
       <AppContent />
     </ErrorBoundary>
   );
 }
 
-// Main App component with LoadingProvider and ErrorBoundary
+// Main App component with HelmetProvider, LoadingProvider and ErrorBoundary
 function App() {
   return (
-    <LoadingProvider>
+    <HelmetProvider>
       <Router>
-        <AppWithErrorBoundary />
+        <LoadingProvider>
+          <AppWithErrorBoundary />
+        </LoadingProvider>
       </Router>
-    </LoadingProvider>
+    </HelmetProvider>
   );
 }
 

@@ -2,6 +2,9 @@ import Header from '../components/Layout/Header';
 import Footer from '../components/Layout/Footer';
 import CTA from '../components/CTA';
 import EstimateSection from '../components/EstimateSection';
+import SEO from '../components/SEO';
+import { seoData } from '../config/seoData';
+import ServiceAccordion from '../components/ServiceAccordion';
 import { useSlider } from '../hooks/useSlider';
 import { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -351,9 +354,18 @@ const Home = () => {
   
 
   return (
-    <div className="page-wrapper-2">
-      <Header />
-      <main className="main-wrapper-2">
+    <>
+      <SEO
+        title={seoData.home.title}
+        description={seoData.home.description}
+        keywords={seoData.home.keywords}
+        canonical={seoData.home.canonical}
+        schema={seoData.home.schema}
+        ogImage="/images/og-home.jpg"
+      />
+      <div className="page-wrapper-2">
+        <Header />
+        <main className="main-wrapper-2">
         {/* Psychology-Optimized Hero Section */}
         <section className="section psychology-hero">
           <div className="hero-container">
@@ -380,13 +392,15 @@ const Home = () => {
                   {/* Primary CTA - Value-Driven */}
                   <div className="cta-section">
                     <Link to="/contact" className="btn-primary-psychology">
-                      <span>Book Your Free Design Consultation</span>
+                      <span className="btn-text-desktop">Book Your Free Design Consultation</span>
+                      <span className="btn-text-mobile">Get Free Consultation</span>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M4.16667 10H15.8333M15.8333 10L10 4.16667M15.8333 10L10 15.8333" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </Link>
                     <Link to="/portfolio" className="btn-secondary-psychology">
-                      <span>View Our Portfolio</span>
+                      <span className="btn-text-desktop">View Our Portfolio</span>
+                      <span className="btn-text-mobile">View Portfolio</span>
                     </Link>
                   </div>
                 </div>
@@ -497,6 +511,8 @@ const Home = () => {
                       <div className="service-content">
                         <h3 className="service-content-title">{service.title}</h3>
                         <p className="service-description">{service.description}</p>
+                        
+                        {/* Desktop - Regular List */}
                         <ul className="service-features">
                           {service.features.map((feature, index) => (
                             <li key={index} className="feature-item">
@@ -505,6 +521,9 @@ const Home = () => {
                             </li>
                           ))}
                         </ul>
+                        
+                        {/* Mobile - Accordion */}
+                        <ServiceAccordion features={service.features} />
                       </div>
                     </div>
                   ))}
@@ -684,6 +703,7 @@ const Home = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 

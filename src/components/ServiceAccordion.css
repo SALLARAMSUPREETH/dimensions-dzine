@@ -1,0 +1,111 @@
+/* Service Accordion - Mobile Only */
+.service-accordion {
+  display: none;
+}
+
+/* Show accordion only on mobile */
+@media (max-width: 768px) {
+  .service-accordion {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .accordion-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background: rgba(84, 103, 54, 0.1);
+    border: 1px solid rgba(84, 103, 54, 0.2);
+    border-radius: 0.5rem;
+    color: var(--color-primary);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .accordion-toggle:hover {
+    background: rgba(84, 103, 54, 0.15);
+  }
+
+  .accordion-toggle.open {
+    background: rgba(84, 103, 54, 0.15);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .accordion-icon {
+    transition: transform 0.3s ease;
+    color: var(--color-primary);
+  }
+
+  .accordion-toggle.open .accordion-icon {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 1rem;
+  }
+
+  .accordion-content.open {
+    max-height: 500px;
+    padding: 1rem;
+    background: rgba(84, 103, 54, 0.05);
+    border: 1px solid rgba(84, 103, 54, 0.2);
+    border-top: none;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .service-features-mobile {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .feature-item-mobile {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+  }
+
+  .feature-icon-mobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  /* Hide desktop features list on mobile */
+  .service-features {
+    display: none !important;
+  }
+}
+
+/* Desktop - hide accordion, show regular list */
+@media (min-width: 769px) {
+  .service-accordion {
+    display: none !important;
+  }
+}

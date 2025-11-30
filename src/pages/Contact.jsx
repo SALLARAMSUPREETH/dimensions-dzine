@@ -11,6 +11,8 @@ import { FaWhatsapp as FaWhatsappSolid, FaAward } from 'react-icons/fa';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import Header from '../components/Layout/Header';
 import Footer from '../components/Layout/Footer';
+import SEO from '../components/SEO';
+import { seoData } from '../config/seoData';
 import { GOOGLE_FORM_CONFIG } from '../config/formConfig';
 import './Contact.css';
 
@@ -133,8 +135,17 @@ const Contact = () => {
   };
 
   return (
-    <div className="page-wrapper">
-      <Header />
+    <>
+      <SEO
+        title={seoData.contact.title}
+        description={seoData.contact.description}
+        keywords={seoData.contact.keywords}
+        canonical={seoData.contact.canonical}
+        schema={seoData.contact.schema}
+        ogImage="/images/og-contact.jpg"
+      />
+      <div className="page-wrapper">
+        <Header />
       <main className="main-wrapper">
         {/* Hero Section */}
         <section className="redesigned-contact-hero">
@@ -375,6 +386,7 @@ const Contact = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 

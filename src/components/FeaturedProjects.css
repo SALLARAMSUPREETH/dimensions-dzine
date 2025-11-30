@@ -315,10 +315,6 @@
 }
 
 @media (max-width: 768px) {
-  .projects-section {
-    padding: var(--space-16) 0;
-  }
-
   .projects-grid {
     grid-template-columns: 1fr;
     gap: var(--space-6);

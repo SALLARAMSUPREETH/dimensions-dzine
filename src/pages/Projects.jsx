@@ -3,7 +3,10 @@ import { useState } from 'react';
 import Header from '../components/Layout/Header';
 import Footer from '../components/Layout/Footer';
 import LazyImage from '../components/LazyImage';
+import SEO from '../components/SEO';
+import { seoData } from '../config/seoData';
 import { portfolioProjects } from '../data/projects';
+import { ALL_SERVICES } from '../config/services';
 import './Projects.css';
 
 const Projects = () => {
@@ -13,7 +16,8 @@ const Projects = () => {
   const allProjects = portfolioProjects.map(project => ({
     id: project.id,
     title: project.title,
-    category: project.category,
+    category: project.category, // Commercial or Residential (shown on card)
+    services: project.services || [], // Services array for filtering
     description: project.description,
     image: project.image,
     status: project.status,
@@ -23,22 +27,42 @@ const Projects = () => {
     link: project.route
   }));
 
-  // Auto-generate categories from actual project data
-  const uniqueCategories = [...new Set(allProjects.map(project => project.category))];
-  const categories = ['All', ...uniqueCategories.sort()];
+  // Auto-generate service filters from actual project data
+  // Get all unique services from projects
+  const allServicesInProjects = new Set();
+  allProjects.forEach(project => {
+    if (project.services && Array.isArray(project.services)) {
+      project.services.forEach(service => allServicesInProjects.add(service));
+    }
+  });
+  
+  // Only show services that have projects
+  const availableServices = Array.from(allServicesInProjects).sort();
+  const serviceFilters = ['All', ...availableServices];
 
-  // Filter projects based on active filter
+  // Filter projects based on active service filter
   const filteredProjects = activeFilter === 'All' 
     ? allProjects 
-    : allProjects.filter(project => project.category === activeFilter);
+    : allProjects.filter(project => 
+        project.services && project.services.includes(activeFilter)
+      );
 
   const handleFilterClick = (category) => {
     setActiveFilter(category);
   };
 
   return (
-    <div className="page-wrapper-2">
-      <Header />
+    <>
+      <SEO
+        title={seoData.projects.title}
+        description={seoData.projects.description}
+        keywords={seoData.projects.keywords}
+        canonical={seoData.projects.canonical}
+        schema={seoData.projects.schema}
+        ogImage="/images/og-projects.jpg"
+      />
+      <div className="page-wrapper-2">
+        <Header />
       <main className="main-wrapper-2">
         <div className="portfolio-page">
         {/* Hero Section */}
@@ -54,17 +78,17 @@ const Projects = () => {
           </div>
         </section>
 
-        {/* Filter Section */}
+        {/* Filter Section - Services */}
         <section className="portfolio-filter">
           <div className="container">
             <div className="portfolio-filter-tabs">
-              {categories.map((category) => (
+              {serviceFilters.map((service) => (
                 <button 
-                  key={category} 
-                  className={`portfolio-filter-tab ${category === activeFilter ? 'active' : ''}`}
-                  onClick={() => handleFilterClick(category)}
+                  key={service} 
+                  className={`portfolio-filter-tab ${service === activeFilter ? 'active' : ''}`}
+                  onClick={() => handleFilterClick(service)}
                 >
-                  {category}
+                  {service}
                 </button>
               ))}
             </div>
@@ -149,6 +173,7 @@ const Projects = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 

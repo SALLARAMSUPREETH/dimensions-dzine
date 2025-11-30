@@ -1,0 +1,22 @@
+# robots.txt for Dimensions Dzine
+# https://dimensionsdzine.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private pages if any
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow search engines to crawl all public pages
+Allow: /about
+Allow: /services
+Allow: /projects
+Allow: /contact
+Allow: /calculator
+
+# Sitemap location
+Sitemap: https://dimensionsdzine.com/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+# Crawl-delay: 1

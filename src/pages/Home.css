@@ -419,6 +419,15 @@
   gap: var(--space-6);
 }
 
+/* Button text visibility - Desktop default */
+.btn-text-desktop {
+  display: inline;
+}
+
+.btn-text-mobile {
+  display: none;
+}
+
 .btn-primary-psychology {
   display: inline-flex;
   align-items: center;
@@ -434,7 +443,6 @@
   font-family: var(--font-family-poppins);
   letter-spacing: 0.02em;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 2px solid transparent;
   text-align: center;
   box-shadow:
     0 8px 24px rgba(61, 79, 40, 0.3),
@@ -1201,7 +1209,6 @@
   .hero-left {
     width: 100%;
     text-align: center;
-    margin-bottom: var(--space-4);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1222,32 +1229,95 @@
     max-width: 400px;
   }
 
+  /* Improved brand tagline for mobile */
+  .brand-tagline {
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-2);
+    opacity: 0.85;
+    font-weight: 600;
+  }
+
+  /* Better main heading spacing */
   .main-slogan {
-    font-size: var(--text-3xl);
-    line-height: var(--line-height-tight);
+    font-size: 1.85rem;
+    line-height: 1.25;
     text-align: center;
-    margin: 0 auto var(--space-4) auto;
+    margin: 0 auto var(--space-3) auto;
+    letter-spacing: -0.01em;
   }
 
+  /* Improved supporting text - more concise */
   .supporting-text {
-    font-size: var(--text-base);
-    max-width: 90%;
-    margin: var(--space-2) auto var(--space-4) auto;
+    font-size: 0.9rem;
+    max-width: 92%;
+    margin: 0 auto var(--space-5) auto;
     text-align: center;
+    line-height: 1.55;
+    color: #6b7280;
   }
 
+  /* Better CTA button spacing and consistency */
   .cta-section {
     flex-direction: column;
     align-items: center;
-    gap: var(--space-2);
+    gap: 0.875rem;
     width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
   }
 
+  /* Consistent button styling */
   .btn-primary-psychology,
   .btn-secondary-psychology {
     width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+  }
+
+  /* Primary button specific */
+  .btn-primary-psychology {
+    background: linear-gradient(135deg, #546736 0%, #3d4f28 100%);
+    box-shadow: 0 4px 12px rgba(84, 103, 54, 0.25);
+  }
+
+  .btn-primary-psychology:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(84, 103, 54, 0.25);
+  }
+
+  /* Secondary button specific */
+  .btn-secondary-psychology {
+    background: transparent;
+    border: 2px solid #c9a961;
+    color: #c9a961;
+  }
+
+  .btn-secondary-psychology:active {
+    background: rgba(201, 169, 97, 0.1);
+  }
+
+  /* Hide button icons on mobile for cleaner look */
+  .btn-primary-psychology svg {
+    display: none;
+  }
+
+  /* Show mobile text, hide desktop text */
+  .btn-text-desktop {
+    display: none;
+  }
+
+  .btn-text-mobile {
+    display: inline;
   }
 
   .trust-signals {
@@ -1263,9 +1333,12 @@
     padding: var(--space-3) var(--space-4);
   }
 
+  /* Improved hero image styling */
   .hero-main-image,
   .image-carousel {
-    height: 250px;
+    height: 280px;
+    border-radius: 1.25rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   }
 
   .services-grid {
@@ -1304,22 +1377,45 @@
 
   .hero-content-split {
     min-height: 30vh;
-    padding: 0;
+    padding: 0 1rem;
+  }
+
+  /* Extra small mobile adjustments */
+  .brand-tagline {
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
   }
 
   .main-slogan {
-    font-size: var(--text-2xl);
-    margin-bottom: var(--space-3);
+    font-size: 1.65rem;
+    margin-bottom: var(--space-2);
+    line-height: 1.3;
   }
 
   .supporting-text {
-    font-size: var(--text-sm);
-    margin-bottom: var(--space-3);
+    font-size: 0.85rem;
+    margin-bottom: var(--space-4);
+    max-width: 95%;
+    line-height: 1.5;
+  }
+
+  .cta-section {
+    padding: 0 0.75rem;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .btn-primary-psychology,
+  .btn-secondary-psychology {
+    padding: 0.9rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 0.65rem;
   }
 
   .hero-main-image,
   .image-carousel {
-    height: 200px;
+    height: 240px;
+    border-radius: 1rem;
   }
 
   .trust-card {
@@ -1421,11 +1517,7 @@
 
 @media (max-width: 480px) {
   .psychology-hero {
-    padding: 5rem 0rem;
-  }
-
-  .hero-left {
-    margin-bottom: 1rem;
+    padding: 5rem 0rem 0rem;
   }
 
   .main-slogan {
@@ -2489,7 +2581,8 @@
     width: 10px;
     height: 10px;
   }
-  .services-grid{
+
+  .services-grid {
     padding: 0;
   }
 
@@ -2502,6 +2595,7 @@
     font-size: 1rem;
   }
 }
+
 /* =
 =======================================
    Service Card Links

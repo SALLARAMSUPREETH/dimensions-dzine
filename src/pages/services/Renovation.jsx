@@ -1,147 +1,203 @@
 import { Link } from 'react-router-dom';
+import { FaHammer, FaHome, FaPaintRoller, FaWrench } from 'react-icons/fa';
 import Header from '../../components/Layout/Header';
 import Footer from '../../components/Layout/Footer';
 import LazyImage from '../../components/LazyImage';
+import SEO from '../../components/SEO';
+import { serviceSeoData } from '../../config/seoData';
+import { getFeaturedProjectsByService } from '../../utils/projectFilters';
 import './Renovation.css';
 
 const Renovation = () => {
+  // Automatically get projects for this service
+  const serviceProjects = getFeaturedProjectsByService('Renovation', 3);
+
   return (
-    <div className="page-wrapper-2">
-      <Header />
-      <main className="main-wrapper-2">
-        {/* Breadcrumb */}
-        <section className="const-breadcrumb-section">
-          <div className="padding-global-2">
-            <div className="container-large-2">
-              <div className="const-breadcrumb">
-                <Link to="/">Home</Link>
-                <span className="const-breadcrumb-sep">/</span>
-                <Link to="/services">Services</Link>
-                <span className="const-breadcrumb-sep">/</span>
-                <span className="const-breadcrumb-current">Renovation</span>
+    <>
+      <SEO
+        title={serviceSeoData.renovation.title}
+        description={serviceSeoData.renovation.description}
+        keywords={serviceSeoData.renovation.keywords}
+        canonical={serviceSeoData.renovation.canonical}
+        ogImage="/images/services/renovation-og.jpg"
+      />
+      <div className="page-wrapper-2">
+        <Header />
+        <main className="main-wrapper-2">
+          
+          {/* Hero Section */}
+          <section className="construction-hero">
+            <div className="container-large">
+              <div className="construction-hero-content">
+                <h1 className="construction-hero-title">
+                  Renovation <span className="title-highlight">Services</span>
+                </h1>
+                <p className="construction-hero-subtitle">
+                  Transform your space with expert renovation, breathing new life into existing spaces with innovative solutions
+                </p>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Hero Section */}
-        <section className="const-hero-section">
-          <div className="padding-global-2">
-            <div className="container-large-2">
-              <div className="const-hero-grid">
-                <div className="const-hero-content">
-                  <h1 className="const-hero-title">Transform Your Space with Expert Renovation</h1>
-                  <p className="const-hero-tagline">Breathe new life into existing spaces with innovative solutions.</p>
-                  <p className="const-hero-description">
-                    From kitchen makeovers to complete home transformations — we renovate with precision, minimal disruption, and maximum impact.
+          {/* Intro Section */}
+          <section className="construction-intro">
+            <div className="container-large">
+              <div className="intro-grid">
+                <div className="intro-text-content">
+                  <h2 className="section-title-construction">Transform Your Space with Expert Renovation</h2>
+                  <p className="intro-description">
+                    From kitchen makeovers to complete home transformations — we renovate with precision, minimal disruption, and maximum impact. Our renovation experts help you modernize and enhance your existing spaces.
                   </p>
-                  <div className="const-hero-actions">
-                    <Link to="/contact" className="const-btn-primary">Get a Free Consultation</Link>
-                  </div>
                 </div>
-                <div className="const-hero-image-wrapper">
+                <div className="intro-image-wrapper">
                   <LazyImage
                     src="/images/services/renovation-services.jpg"
-                    alt="Professional Renovation Services"
-                    className="const-hero-image"
+                    alt="Renovation Services"
+                    className="intro-image"
                   />
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Stats Section */}
-        <section className="const-stats-section">
-          <div className="padding-global-2">
-            <div className="container-large-2">
-              <div className="const-stats-grid">
-                <div className="const-stat-item">
-                  <div className="const-stat-number">90+</div>
-                  <div className="const-stat-label">Renovations Completed</div>
+          {/* What We Offer */}
+          <section className="construction-services">
+            <div className="container-large">
+              <h2 className="section-title-construction">What We Offer</h2>
+              <div className="services-grid-construction">
+                <div className="service-card-construction">
+                  <div className="service-icon-construction">
+                    <FaHome />
+                  </div>
+                  <h3 className="service-title-construction">Home Renovation</h3>
+                  <p className="service-desc-construction">
+                    Complete home makeovers including structural and aesthetic improvements
+                  </p>
                 </div>
-                <div className="const-stat-item">
-                  <div className="const-stat-number">95%</div>
-                  <div className="const-stat-label">On-Budget Projects</div>
+
+                <div className="service-card-construction">
+                  <div className="service-icon-construction">
+                    <FaHammer />
+                  </div>
+                  <h3 className="service-title-construction">Kitchen Remodeling</h3>
+                  <p className="service-desc-construction">
+                    Modern kitchen renovations with updated fixtures and layouts
+                  </p>
                 </div>
-                <div className="const-stat-item">
-                  <div className="const-stat-number">10+</div>
-                  <div className="const-stat-label">Years Experience</div>
+
+                <div className="service-card-construction">
+                  <div className="service-icon-construction">
+                    <FaPaintRoller />
+                  </div>
+                  <h3 className="service-title-construction">Bathroom Upgrades</h3>
+                  <p className="service-desc-construction">
+                    Transform bathrooms with modern fixtures and elegant finishes
+                  </p>
+                </div>
+
+                <div className="service-card-construction">
+                  <div className="service-icon-construction">
+                    <FaWrench />
+                  </div>
+                  <h3 className="service-title-construction">Structural Repairs</h3>
+                  <p className="service-desc-construction">
+                    Fix structural issues while enhancing the overall design
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Featured Renovation Projects */}
-        <section className="const-projects-section">
-          <div className="padding-global-2">
-            <div className="container-large-2">
-              <h2 className="const-section-title">Featured Renovation Projects</h2>
-              <p className="const-section-subtitle">See how we've transformed existing spaces</p>
-              <div className="const-projects-grid">
-                <Link to="/portfolio" className="const-project-card">
-                  <div className="const-project-image-wrapper">
-                    <LazyImage
-                      src="/images/WhatsApp-Image-2025-04-04-at-2.31.34-PM-2.jpeg"
-                      alt="Kitchen Renovation Project"
-                      className="const-project-image"
-                    />
-                    <div className="const-project-overlay">
-                      <h4 className="const-project-name">Modern Kitchen</h4>
-                      <p className="const-project-details">Complete Makeover · Hyderabad</p>
-                    </div>
-                  </div>
-                </Link>
-                <Link to="/portfolio" className="const-project-card">
-                  <div className="const-project-image-wrapper">
-                    <LazyImage
-                      src="/images/Enscape_2025-04-06-10-48-50.jpg"
-                      alt="Living Space Renovation"
-                      className="const-project-image"
-                    />
-                    <div className="const-project-overlay">
-                      <h4 className="const-project-name">Living Space Update</h4>
-                      <p className="const-project-details">Contemporary Design · Hyderabad</p>
-                    </div>
-                  </div>
-                </Link>
-                <Link to="/portfolio" className="const-project-card">
-                  <div className="const-project-image-wrapper">
-                    <LazyImage
-                      src="/images/WhatsApp-Image-2025-04-04-at-2.31.34-PM.jpeg"
-                      alt="Commercial Renovation"
-                      className="const-project-image"
-                    />
-                    <div className="const-project-overlay">
-                      <h4 className="const-project-name">Cafe Renovation</h4>
-                      <p className="const-project-details">Modern Ambiance · Hyderabad</p>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-              <div className="const-projects-cta">
-                <Link to="/portfolio" className="const-link-btn">View All Projects →</Link>
+          {/* Why Choose Us */}
+          <section className="construction-why">
+            <div className="container-large">
+              <h2 className="section-title-construction">Why Choose Us</h2>
+              <div className="why-grid">
+                <div className="why-item">
+                  <div className="why-number">01</div>
+                  <h3 className="why-title">Quality Materials</h3>
+                  <p className="why-desc">We use only premium, certified materials for lasting durability</p>
+                </div>
+                <div className="why-item">
+                  <div className="why-number">02</div>
+                  <h3 className="why-title">Experienced Team</h3>
+                  <p className="why-desc">Skilled professionals with 10+ years of construction expertise</p>
+                </div>
+                <div className="why-item">
+                  <div className="why-number">03</div>
+                  <h3 className="why-title">On-Time Delivery</h3>
+                  <p className="why-desc">Strict timelines and project management for punctual completion</p>
+                </div>
+                <div className="why-item">
+                  <div className="why-number">04</div>
+                  <h3 className="why-title">Transparent Pricing</h3>
+                  <p className="why-desc">Clear quotations with no hidden costs or surprises</p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Final CTA */}
-        <section className="const-cta-section">
-          <div className="padding-global-2">
-            <div className="container-large-2">
-              <div className="const-cta-content">
-                <h2 className="const-cta-title">Ready to Renovate Your Space?</h2>
-                <p className="const-cta-description">Transform your existing space into something extraordinary. Schedule your free consultation today.</p>
-                <Link to="/contact" className="const-btn-primary">Get Your Free Quote</Link>
+          {/* Featured Projects - Auto-filtered by service */}
+          <section className="construction-projects">
+            <div className="container-large">
+              <h2 className="section-title-construction">Featured Renovation Projects</h2>
+              <p className="section-subtitle-construction">See how we've transformed existing spaces</p>
+              {serviceProjects.length > 0 ? (
+                <>
+                  <div className="projects-grid-construction">
+                    {serviceProjects.map((project) => (
+                      <Link key={project.id} to={project.route} className="project-card-construction">
+                        <div className="project-image-wrapper">
+                          <LazyImage
+                            src={project.image}
+                            alt={project.title}
+                            className="project-image-construction"
+                          />
+                        </div>
+                        <div className="project-info-construction">
+                          <h3 className="project-name-construction">{project.title}</h3>
+                          <p className="project-details-construction">{project.category} · {project.location}</p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="projects-cta-construction">
+                    <Link to="/projects" className="link-btn-construction">View All Projects →</Link>
+                  </div>
+                </>
+              ) : (
+                <div className="projects-empty-state">
+                  <p>No projects available yet. Check back soon!</p>
+                  <Link to="/projects" className="link-btn-construction">View All Projects →</Link>
+                </div>
+              )}
+            </div>
+          </section>
+
+          {/* CTA Section */}
+          <section className="construction-cta">
+            <div className="container-large">
+              <div className="cta-content-construction">
+                <h2 className="cta-title-construction">Ready to Renovate Your Space?</h2>
+                <p className="cta-text-construction">
+                  Transform your existing space into something extraordinary. Schedule your free consultation today.
+                </p>
+                <div className="cta-buttons-construction">
+                  <Link to="/contact" className="btn-primary-construction">
+                    Get Your Free Quote
+                  </Link>
+                  <Link to="/calculator" className="btn-secondary-construction">
+                    Calculate Cost
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
+          </section>
+
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 };
 

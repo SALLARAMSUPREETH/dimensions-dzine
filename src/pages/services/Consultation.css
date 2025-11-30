@@ -1,8 +1,443 @@
+/* Consultation Service Page - Matches Construction Style */
 
-.consultation-tagline { color: var(--color-primary, #546736); }
-.consultation-hero-image { box-shadow: 0 20px 40px rgba(84, 103, 54, 0.15); }
-.consultation-feature-card { box-shadow: 0 4px 12px rgba(84, 103, 54, 0.08); border-top: 3px solid var(--color-primary, #546736); }
-.consultation-feature-card:hover { box-shadow: 0 12px 30px rgba(84, 103, 54, 0.15); }
-.consultation-btn-primary { background: linear-gradient(135deg, var(--color-primary, #546736), var(--color-secondary, #7c4530)); }
-.consultation-btn-secondary { color: var(--color-primary, #546736); border: 2px solid var(--color-primary, #546736); }
-.consultation-btn-secondary:hover { background: var(--color-primary, #546736); }
+/* Hero Section */
+.construction-hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, #f8f6f1 0%, #ebe9e4 100%);
+  text-align: center;
+}
+
+.construction-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.construction-hero-title {
+  font-family: 'Sentient', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.title-highlight {
+  color: #546736;
+}
+
+.construction-hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Intro Section */
+.construction-intro {
+  padding: 5rem 0;
+  background: white;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title-construction {
+  font-family: 'Sentient', serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.intro-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #000000;
+  font-weight: 400;
+}
+
+.intro-image-wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.intro-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.intro-image-wrapper:hover .intro-image {
+  transform: scale(1.05);
+}
+
+/* Services Section */
+.construction-services {
+  padding: 5rem 0;
+  background: #f8f6f1;
+}
+
+.construction-services .section-title-construction {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-grid-construction {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.service-card-construction {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.service-card-construction:hover {
+  transform: translateY(-8px);
+  border-color: rgba(84, 103, 54, 0.2);
+  box-shadow: 0 12px 40px rgba(84, 103, 54, 0.12);
+}
+
+.service-icon-construction {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #f8f6f1 0%, #ebe9e4 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  color: #546736;
+  transition: all 0.3s ease;
+}
+
+.service-card-construction:hover .service-icon-construction {
+  background: linear-gradient(135deg, #546736 0%, #3d4f28 100%);
+  color: white;
+  transform: scale(1.1);
+}
+
+.service-title-construction {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+}
+
+.service-desc-construction {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Why Choose Us Section */
+.construction-why {
+  padding: 5rem 0;
+  background: white;
+}
+
+.construction-why .section-title-construction {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.why-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.why-number {
+  font-family: 'Sentient', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #c9a961;
+  opacity: 0.7;
+  line-height: 1;
+}
+
+.why-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-top: -1rem;
+}
+
+.why-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Projects Section */
+.construction-projects {
+  padding: 5rem 0;
+  background: #f8f6f1;
+}
+
+.construction-projects .section-title-construction {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle-construction {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects-grid-construction {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
+}
+
+.project-card-construction {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-card-construction:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(84, 103, 54, 0.15);
+}
+
+.project-image-wrapper {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.project-image-construction {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card-construction:hover .project-image-construction {
+  transform: scale(1.1);
+}
+
+.project-info-construction {
+  padding: 1.5rem;
+}
+
+.project-name-construction {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.project-details-construction {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.projects-cta-construction {
+  text-align: center;
+}
+
+.link-btn-construction {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #546736;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link-btn-construction:hover {
+  color: #3d4f28;
+}
+
+/* CTA Section */
+.construction-cta {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f8f6f1 0%, #ebe9e4 100%);
+}
+
+.cta-content-construction {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.cta-title-construction {
+  font-family: 'Sentient', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.cta-text-construction {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125rem;
+  color: #000000;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.cta-buttons-construction {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary-construction,
+.btn-secondary-construction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-construction {
+  background: linear-gradient(135deg, #546736 0%, #3d4f28 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(84, 103, 54, 0.25);
+}
+
+.btn-primary-construction:hover {
+  background: linear-gradient(135deg, #3d4f28 0%, #2d3a1f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(84, 103, 54, 0.35);
+  color: white;
+}
+
+.btn-secondary-construction {
+  background: white;
+  color: #546736;
+  border: 2px solid #546736;
+}
+
+.btn-secondary-construction:hover {
+  background: white;
+  color: #3d4f28;
+  border-color: #3d4f28;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(84, 103, 54, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .construction-hero {
+    padding: 3rem 0 2rem;
+  }
+
+  .construction-hero-title {
+    font-size: 2.25rem;
+  }
+
+  .construction-hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .section-title-construction {
+    font-size: 2rem;
+  }
+
+  .services-grid-construction {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .projects-grid-construction {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .cta-buttons-construction {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary-construction,
+  .btn-secondary-construction {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .construction-hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title-construction {
+    font-size: 1.75rem;
+  }
+
+  .cta-title-construction {
+    font-size: 2rem;
+  }
+}

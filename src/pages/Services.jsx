@@ -2,6 +2,9 @@ import { useNavigate } from 'react-router-dom';
 import Header from '../components/Layout/Header';
 import Footer from '../components/Layout/Footer';
 import LazyImage from '../components/LazyImage';
+import SEO from '../components/SEO';
+import { seoData } from '../config/seoData';
+import ServiceAccordion from '../components/ServiceAccordion';
 import './Home.css';
 
 const Services = () => {
@@ -71,8 +74,17 @@ const Services = () => {
   ];
 
   return (
-    <div className="page-wrapper-2">
-      <Header />
+    <>
+      <SEO
+        title={seoData.services.title}
+        description={seoData.services.description}
+        keywords={seoData.services.keywords}
+        canonical={seoData.services.canonical}
+        schema={seoData.services.schema}
+        ogImage="/images/og-services.jpg"
+      />
+      <div className="page-wrapper-2">
+        <Header />
       <main className="main-wrapper-2">
         {/* Services Section */}
         <section className="section services-section">
@@ -102,6 +114,8 @@ const Services = () => {
                       <div className="service-content">
                         <h3 className="service-content-title">{service.title}</h3>
                         <p className="service-description">{service.description}</p>
+                        
+                        {/* Desktop - Regular List */}
                         <ul className="service-features">
                           {service.features.map((feature, index) => (
                             <li key={index} className="feature-item">
@@ -110,6 +124,9 @@ const Services = () => {
                             </li>
                           ))}
                         </ul>
+                        
+                        {/* Mobile - Accordion */}
+                        <ServiceAccordion features={service.features} />
                       </div>
                     </div>
                   ))}
@@ -121,6 +138,7 @@ const Services = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 
