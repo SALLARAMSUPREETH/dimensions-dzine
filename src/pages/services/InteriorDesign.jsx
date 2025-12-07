@@ -19,7 +19,7 @@ const InteriorDesign = () => {
         description={serviceSeoData.interiorDesign.description}
         keywords={serviceSeoData.interiorDesign.keywords}
         canonical={serviceSeoData.interiorDesign.canonical}
-        ogImage="/images/services/interior-design-og.jpg"
+        ogImage="/images/services/interior-design-og.webp"
       />
       <div className="page-wrapper-2">
         <Header />
@@ -51,7 +51,7 @@ const InteriorDesign = () => {
                 </div>
                 <div className="intro-image-wrapper">
                   <LazyImage
-                    src="/images/services/interior-services.jpg"
+                    src="/images/services/interior-services.webp"
                     alt="Interior Design Services"
                     className="intro-image"
                   />
@@ -186,7 +186,7 @@ const InteriorDesign = () => {
                   <Link to="/contact" className="btn-primary-construction">
                     Get Free Consultation
                   </Link>
-                  <Link to="/calculator" className="btn-secondary-construction">
+                  <Link to="/estimate/full-home-interior" className="btn-secondary-construction">
                     Calculate Cost
                   </Link>
                 </div>

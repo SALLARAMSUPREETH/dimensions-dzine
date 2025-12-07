@@ -95,19 +95,19 @@ sameAs: [
 
 ### 3. Create Open Graph Images (1200x630px)
 Required images for social sharing:
-- `/public/images/og-default.jpg`
-- `/public/images/og-home.jpg`
-- `/public/images/og-about.jpg`
-- `/public/images/og-services.jpg`
-- `/public/images/og-projects.jpg`
-- `/public/images/og-contact.jpg`
-- `/public/images/og-calculator.jpg`
-- `/public/images/services/construction-og.jpg`
-- `/public/images/services/interior-design-og.jpg`
-- `/public/images/services/renovation-og.jpg`
-- `/public/images/services/consultation-og.jpg`
-- `/public/images/services/3d-visualization-og.jpg`
-- `/public/images/services/material-sourcing-og.jpg`
+- `/public/images/og-default.webp`
+- `/public/images/og-home.webp`
+- `/public/images/og-about.webp`
+- `/public/images/og-services.webp`
+- `/public/images/og-projects.webp`
+- `/public/images/og-contact.webp`
+- `/public/images/og-calculator.webp`
+- `/public/images/services/construction-og.webp`
+- `/public/images/services/interior-design-og.webp`
+- `/public/images/services/renovation-og.webp`
+- `/public/images/services/consultation-og.webp`
+- `/public/images/services/3d-visualization-og.webp`
+- `/public/images/services/material-sourcing-og.webp`
 
 **Tip:** Use Canva or Figma to create these images with your branding.
 

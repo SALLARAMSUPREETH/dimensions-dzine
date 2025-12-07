@@ -62,7 +62,7 @@ const FullHomeInteriorStepper = () => {
       features: ['Affordable pricing', 'Convenient designs', 'Basic accessories'],
       multiplier: 1.0,
       color: '#546736',
-      image: '/images/Home-011_1-p-1080.jpeg'
+      image: '/images/Home-011_1-p-1080.webp'
     },
     {
       id: 'premium',
@@ -71,7 +71,7 @@ const FullHomeInteriorStepper = () => {
       features: ['Mid-range pricing', 'Premium designs', 'Wide range of accessories'],
       multiplier: 1.5,
       color: '#7c4530',
-      image: '/images/Home-016_1-p-1080.jpeg'
+      image: '/images/Home-016_1-p-1080.webp'
     },
     {
       id: 'luxe',
@@ -80,7 +80,7 @@ const FullHomeInteriorStepper = () => {
       features: ['Elite pricing', 'Lavish designs', 'Premium accessories'],
       multiplier: 2.2,
       color: '#546736',
-      image: '/images/Home-020_1-p-1080.jpeg'
+      image: '/images/Home-020_1-p-1080.webp'
     }
   ];
 

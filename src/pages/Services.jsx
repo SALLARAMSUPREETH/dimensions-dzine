@@ -16,7 +16,7 @@ const Services = () => {
       title: "Construction",
       tagline: "BUILD YOUR DREAM",
       description: "From foundation to finish — precise, reliable, on time.",
-      image: "/images/services/construction-services.jpg",
+      image: "/images/services/construction-services.webp",
       features: ["Project Management", "Quality Control", "Timeline Management", "End-to-End Material Sourcing"],
       cta: "Learn More",
       link: "/services/construction"
@@ -26,7 +26,7 @@ const Services = () => {
       title: "Interior Design",
       tagline: "DESIGN YOUR SPACE",
       description: "Bespoke interiors that reflect your unique style.",
-      image: "/images/services/interior-services.jpg",
+      image: "/images/services/interior-services.webp",
       features: ["Space Planning", "Color Consultation", "Furniture Selection", "Lighting Design"],
       cta: "Learn More",
       link: "/services/interior-design"
@@ -36,7 +36,7 @@ const Services = () => {
       title: "Renovation",
       tagline: "RENEW YOUR HOME",
       description: "Transform existing spaces with innovative solutions.",
-      image: "/images/services/renovation-services.jpg",
+      image: "/images/services/renovation-services.webp",
       features: ["Kitchen Renovation", "Bathroom Remodeling", "Living Space Updates", "Structural Changes"],
       cta: "Learn More",
       link: "/services/renovation"
@@ -46,7 +46,7 @@ const Services = () => {
       title: "Consultation",
       tagline: "EXPERT GUIDANCE",
       description: "Professional advice for your next project.",
-      image: "/images/services/consultation - services.jpg",
+      image: "/images/services/consultation - services.webp",
       features: ["Design Consultation", "Budget Planning", "Style Assessment", "Project Guidance"],
       cta: "Learn More",
       link: "/services/consultation"
@@ -56,7 +56,7 @@ const Services = () => {
       title: "3D Visualization",
       tagline: "SEE IT FIRST",
       description: "Experience your project before it's built.",
-      image: "/images/services/3d - services.jpg",
+      image: "/images/services/3d - services.webp",
       features: ["3D Rendering", "Virtual Tours", "AR Visualization", "Design Iterations"],
       cta: "Learn More",
       link: "/services/3d-visualization"
@@ -66,7 +66,7 @@ const Services = () => {
       title: "Material Sourcing",
       tagline: "PREMIUM MATERIALS",
       description: "Finest materials from trusted suppliers worldwide.",
-      image: "/images/services/material-services.jpg",
+      image: "/images/services/material-services.webp",
       features: ["Premium Materials", "Global Sourcing", "Quality Assurance", "Cost Optimization"],
       cta: "Learn More",
       link: "/services/material-sourcing"
@@ -81,7 +81,7 @@ const Services = () => {
         keywords={seoData.services.keywords}
         canonical={seoData.services.canonical}
         schema={seoData.services.schema}
-        ogImage="/images/og-services.jpg"
+        ogImage="/images/og-services.webp"
       />
       <div className="page-wrapper-2">
         <Header />

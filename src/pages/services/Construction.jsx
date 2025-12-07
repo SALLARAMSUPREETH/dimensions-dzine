@@ -19,7 +19,7 @@ const Construction = () => {
         description={serviceSeoData.construction.description}
         keywords={serviceSeoData.construction.keywords}
         canonical={serviceSeoData.construction.canonical}
-        ogImage="/images/services/construction-og.jpg"
+        ogImage="/images/services/construction-og.webp"
       />
       <div className="page-wrapper-2">
         <Header />
@@ -51,7 +51,7 @@ const Construction = () => {
                 </div>
                 <div className="intro-image-wrapper">
                   <LazyImage
-                    src="/images/services/construction-services.jpg"
+                    src="/images/services/construction-services.webp"
                     alt="Construction Services"
                     className="intro-image"
                   />
@@ -186,8 +186,8 @@ const Construction = () => {
                   <Link to="/contact" className="btn-primary-construction">
                     Get Free Consultation
                   </Link>
-                  <Link to="/calculator" className="btn-secondary-construction">
-                    Calculate Cost
+                  <Link to="/estimate/construction" className="btn-secondary-construction">
+                    Estimate Cost
                   </Link>
                 </div>
               </div>

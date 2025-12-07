@@ -44,10 +44,10 @@ const Header = () => {
               <div className="brand-container">
                 <div className="clip">
                   <div className="menu-logo">
-                    <img  loading="lazy" src="/images/4-Logo.png" alt="Dimension DZine - Luxury Interior Design and Turnkey Projects" className="logo-2" />
+                    <img  loading="lazy" src="/images/4-Logo.webp" alt="Dimension DZine - Luxury Interior Design and Turnkey Projects" className="logo-2" />
                   </div>
                   <div className="menu-logo menue-logo-bottom">
-                    <img  loading="lazy" src="/images/4-Logo.png" alt="Dimension DZine - Luxury Interior Design and Turnkey Projects" className="logo-2" />
+                    <img  loading="lazy" src="/images/4-Logo.webp" alt="Dimension DZine - Luxury Interior Design and Turnkey Projects" className="logo-2" />
                   </div>
                 </div>
                 <div className="brand-text">

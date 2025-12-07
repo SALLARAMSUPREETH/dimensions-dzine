@@ -19,7 +19,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   // State for showing all projects
-  
+
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -30,7 +30,7 @@ const Home = () => {
       title: "Construction",
       tagline: "BUILD YOUR DREAM",
       description: "From foundation to finish precise, reliable, on time.",
-      image: "/images/services/construction-services.jpg",
+      image: "/images/services/construction-services.webp",
       features: ["Project Management", "Quality Control", "Timeline Management", "End-to-End Material Sourcing"],
       cta: "Learn More",
       route: "/services/construction"
@@ -40,7 +40,7 @@ const Home = () => {
       title: "Interior Design",
       tagline: "DESIGN YOUR SPACE",
       description: "Bespoke interiors that reflect your unique style.",
-      image: "/images/services/interior-services.jpg",
+      image: "/images/services/interior-services.webp",
       features: ["Space Planning", "Color Consultation", "Furniture Selection", "Lighting Design"],
       cta: "Learn More",
       route: "/services/interior-design"
@@ -50,7 +50,7 @@ const Home = () => {
       title: "Consultation",
       tagline: "EXPERT GUIDANCE",
       description: "Professional advice for your next project.",
-      image: "/images/services/consultation - services.jpg",
+      image: "/images/services/consultation - services.webp",
       features: ["Design Consultation", "Budget Planning", "Style Assessment", "Project Guidance"],
       cta: "Learn More",
       route: "/services/consultation"
@@ -104,7 +104,7 @@ const Home = () => {
       role: "Verified Google Review",
       project: "Home Interior Design",
       content: "I recently got my home interiors done, and I'm extremely happy with the results! The team went above and beyond my expectations while keeping the pricing very reasonable. What truly impressed me was how they actively took feedback throughout the work in progress, not just from me but also from other family members. Their dedication to quality and customer satisfaction really shows in the final outcome. Highly recommended!",
-      image: "/images/testimonial-1.jpg",
+      image: "/images/testimonial-1.webp",
       rating: 5
     },
     {
@@ -113,7 +113,7 @@ const Home = () => {
       role: "Verified Google Review",
       project: "Interior Design Consultation",
       content: "We're impressed with the budget-friendly approach and the excellent teamwork. The creative direction and variety in interior design concepts from Dimensions Dzine truly stand out. We're happy to move forward and collaborate with them!",
-      image: "/images/testimonial-2.jpg",
+      image: "/images/testimonial-2.webp",
       rating: 5
     },
     {
@@ -122,7 +122,7 @@ const Home = () => {
       role: "Verified Google Review",
       project: "Complete Home Design",
       content: "The customer service and team work was top notch. Planning, designing and execution was exactly how i planned for my home. Thank you so much Dimensions Dzine team.",
-      image: "/images/testimonial-3.jpg",
+      image: "/images/testimonial-3.webp",
       rating: 5
     },
     {
@@ -131,7 +131,7 @@ const Home = () => {
       role: "Verified Google Review",
       project: "Interior Design Project",
       content: "Friendly budget and team work is very good. We can proceed and collaborate with Dimensions Dezine. The thoughts of interior design is very good, I mean executing different types of designs are good.",
-      image: "/images/testimonial-1.jpg",
+      image: "/images/testimonial-1.webp",
       rating: 5
     },
     {
@@ -140,7 +140,7 @@ const Home = () => {
       role: "Verified Google Review",
       project: "Luxury Interior Design",
       content: "Dimensions Dzine team brings luxury and elegance to life with bespoke interior design solutions. Their creative vision and attention to detail redefine premium living spaces in Hyderabad. A top choice for those who seek timeless, high-end interiors with a personalized touch.",
-      image: "/images/testimonial-2.jpg",
+      image: "/images/testimonial-2.webp",
       rating: 5
     },
     {
@@ -149,7 +149,7 @@ const Home = () => {
       role: "Verified Google Review",
       project: "Personalized Interior Design",
       content: "The professionalism, passion and personal touch they bring to their work truly set them apart. If you're dreaming of a space that reflects your personality and feels like 'you' this is the team to trust. ⭐⭐⭐⭐⭐",
-      image: "/images/testimonial-3.jpg",
+      image: "/images/testimonial-3.webp",
       rating: 5
     }
   ];
@@ -331,27 +331,26 @@ const Home = () => {
   }, [currentImageIndex]);
 
   // Helper function to get project descriptions
-  
+
 
   const sliderImages = [
-    "/images/Enscape_2025-05-06-18-01-37.png",
-    "/images/Enscape_2025-04-06-10-48-50.jpg",
-    "/images/WhatsApp-Image-2025-04-04-at-2.31.34-PM-2.jpeg",
-    "/images/WhatsApp-Image-2025-04-04-at-2.31.34-PM.jpeg",
-    "/images/Enscape_2025-04-06-10-21-11_MB3.jpg",
-    "/images/4-min.png",
-    "/images/5-min.png",
-    "/images/4-min.png",
-    "/images/3-min.png",
-    "/images/1-min.png",
-    "/images/7-min.png",
-    "/images/6-min.png",
-    "/images/Enscape_2025-04-06-10-21-11_MB2.jpg"
+    "/images/SadbhavanaApartment/final/WhatsApp Image 2025-12-02 at 10.07.13 PM.webp",
+    "/images/SadbhavanaApartment/final/WhatsApp Image 2025-12-02 at 10.05.25 PM (3).webp",
+    "/images/SadbhavanaApartment/final/WhatsApp Image 2025-12-02 at 10.05.25 PM (2).webp",
+    "/images/SadbhavanaApartment/final/WhatsApp Image 2025-12-02 at 10.05.21 PM.webp",
+    "/images/SadbhavanaApartment/final/WhatsApp Image 2025-12-02 at 10.05.21 PM (2).webp",
+    "/images/SadbhavanaApartment/final/WhatsApp Image 2025-12-02 at 10.05.20 PM.webp",
+    "/images/SadbhavanaApartment/final/WhatsApp Image 2025-12-02 at 10.05.20 PM (1).webp",
+    "/images/2BHK/final/WhatsApp Image 2025-12-02 at 10.16.01 PM.webp",
+    "/images/Enscape_2025-04-06-10-48-50.webp",
+    "/images/WhatsApp-Image-2025-04-04-at-2.31.34-PM-2.webp",
+    "/images/WhatsApp-Image-2025-04-04-at-2.31.34-PM.webp",
+    "/images/Enscape_2025-04-06-10-21-11_MB3.webp",
   ];
 
   const { currentSlide, nextSlide, prevSlide, goToSlide } = useSlider(sliderImages, true, 4000);
 
-  
+
 
   return (
     <>
@@ -361,254 +360,338 @@ const Home = () => {
         keywords={seoData.home.keywords}
         canonical={seoData.home.canonical}
         schema={seoData.home.schema}
-        ogImage="/images/og-home.jpg"
+        faq={seoData.home.faq}
+        ogImage="/images/og-home.webp"
+        reviews={{
+          ratingValue: '4.8',
+          reviewCount: '150',
+          reviews: testimonials.slice(0, 5).map(testimonial => ({
+            author: testimonial.name,
+            reviewBody: testimonial.content,
+            rating: testimonial.rating.toString(),
+            datePublished: '2024-01-01', // Update with actual dates if available
+          })),
+        }}
       />
       <div className="page-wrapper-2">
         <Header />
         <main className="main-wrapper-2">
-        {/* Psychology-Optimized Hero Section */}
-        <section className="section psychology-hero">
-          <div className="hero-container">
-            <div className="hero-content-split">
-              {/* Left Side - Hook & Desire */}
-              <div className="hero-left">
-                <div className="brand-section">
-                  {/* Clear Premium Branding */}
-                  <div className="premium-branding">
-                    <div className="brand-tagline">Luxury Interiors | Turnkey Projects</div>
-                  </div>
-
-                  {/* Aspirational Hook */}
-                  <div className="slogan-section">
-                    <h1 className="main-slogan">
-                      <span className="slogan-line">Designing Spaces That Define</span>
-                      <span className="slogan-line highlight">Your Lifestyle</span>
-                    </h1>
-                    <p className="supporting-text">
-                      Timeless, functional, and personalized interiors delivered with precision across Telangana.
-                    </p>
-                  </div>
-
-                  {/* Primary CTA - Value-Driven */}
-                  <div className="cta-section">
-                    <Link to="/contact" className="btn-primary-psychology">
-                      <span className="btn-text-desktop">Book Your Free Design Consultation</span>
-                      <span className="btn-text-mobile">Get Free Consultation</span>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M4.16667 10H15.8333M15.8333 10L10 4.16667M15.8333 10L10 15.8333" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </Link>
-                    <Link to="/portfolio" className="btn-secondary-psychology">
-                      <span className="btn-text-desktop">View Our Portfolio</span>
-                      <span className="btn-text-mobile">View Portfolio</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              {/* Right Side - Proof & Aspiration */}
-              <div className="hero-right">
-                <div className="hero-image-container">
-                  <div className="image-carousel">
-                    <LazyImage
-                      src="/images/Enscape_2025-05-06-18-01-37.png"
-                      alt="Luxury interior design project showcasing modern living space with elegant furniture and natural lighting"
-                      className={`hero-main-image ${currentImageIndex === 0 ? 'active' : ''}`}
-                    />
-                    <LazyImage
-                      src="/images/Home-011_1-p-1080.jpeg"
-                      alt="Contemporary living room design with premium finishes and sophisticated color scheme"
-                      className={`hero-main-image ${currentImageIndex === 1 ? 'active' : ''}`}
-                    />
-                    <LazyImage
-                      src="/images/Office-002_1-p-1080.jpeg"
-                      alt="Executive office space design featuring modern workspace with professional aesthetics"
-                      className={`hero-main-image ${currentImageIndex === 2 ? 'active' : ''}`}
-                    />
-                    <LazyImage
-                      src="/images/Home-016_1-p-1080.jpeg"
-                      alt="Luxury home interior design with high-end materials and custom architectural elements"
-                      className={`hero-main-image ${currentImageIndex === 3 ? 'active' : ''}`}
-                    />
-                  </div>
-
-                  {/* Carousel Indicators */}
-                  <div className="carousel-indicators">
-                    <button
-                      className={`indicator ${currentImageIndex === 0 ? 'active' : ''}`}
-                      onClick={() => setCurrentImageIndex(0)}
-                    ></button>
-                    <button
-                      className={`indicator ${currentImageIndex === 1 ? 'active' : ''}`}
-                      onClick={() => setCurrentImageIndex(1)}
-                    ></button>
-                    <button
-                      className={`indicator ${currentImageIndex === 2 ? 'active' : ''}`}
-                      onClick={() => setCurrentImageIndex(2)}
-                    ></button>
-                    <button
-                      className={`indicator ${currentImageIndex === 3 ? 'active' : ''}`}
-                      onClick={() => setCurrentImageIndex(3)}
-                    ></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Why Choose Us Section */}
-            <div className="why-choose-us-section">
-              <h2 className="why-choose-us-heading">
-                Why Choose <span className="company-name-gradient">Dimensions Dzine</span>
-              </h2>
-            </div>
-
-            {/* Trust Signals - Infinite Scroll */}
-            <div className="trust-signals-scroll">
-              <div className="trust-signals-track" ref={trustTrackRef}>
-                {[...trustItems, ...trustItems].map((item, index) => (
-                  <div key={`trust-${index}`} className="trust-card">
-                    <div className="trust-icon-container">
-                      {item.icon}
+          {/* Psychology-Optimized Hero Section */}
+          <section className="section psychology-hero">
+            <div className="hero-container">
+              <div className="hero-content-split">
+                {/* Left Side - Hook & Desire */}
+                <div className="hero-left">
+                  <div className="brand-section">
+                    {/* Clear Premium Branding */}
+                    <div className="premium-branding">
+                      <div className="brand-tagline">Luxury Interiors | Turnkey Projects</div>
                     </div>
-                    <div className="trust-content">
-                      {item.title}
-                      {item.description}
+
+                    {/* Aspirational Hook */}
+                    <div className="slogan-section">
+                      <h1 className="main-slogan">
+                        <span className="slogan-line">Designing Spaces That Define</span>
+                        <span className="slogan-line highlight">Your Lifestyle</span>
+                      </h1>
+                      <p className="supporting-text">
+                        Timeless, functional, and personalized interiors delivered with precision across Telangana.
+                      </p>
+                    </div>
+
+                    {/* Primary CTA - Value-Driven */}
+                    <div className="cta-section">
+                      <Link to="/contact" className="btn-primary-psychology">
+                        <span className="btn-text-desktop">Book Your Free Design Consultation</span>
+                        <span className="btn-text-mobile">Get Free Consultation</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path d="M4.16667 10H15.8333M15.8333 10L10 4.16667M15.8333 10L10 15.8333" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </Link>
+                      <Link to="/portfolio" className="btn-secondary-psychology">
+                        <span className="btn-text-desktop">View Our Portfolio</span>
+                        <span className="btn-text-mobile">View Portfolio</span>
+                      </Link>
                     </div>
                   </div>
-                ))}
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        {/* Featured Projects Section */}
-        <FeaturedProjects />
-
-        {/* Our Services Section */}
-        <section className="section services-section">
-          <div className="padding-global-2">
-            <div className="container-large-2">
-              <div className="padding-vertical-2">
-                {/* Homepage Services */}
-                <div className="services-section-header">
-                  <h3 className="services-category-title">Our Services</h3>
-                  <p className="services-category-subtitle">Professional solutions for your every need</p>
                 </div>
-                <div className="services-grid">
-                  {homepageServices.map((service) => (
-                    <div key={service.id} className="service-card" onClick={() => navigate(service.route)} style={{ cursor: 'pointer' }}>
-                      <div className="service-image-container">
-                        <LazyImage src={service.image} alt={service.title} className="service-image" />
-                        <div className="service-overlay">
-                          <div className="service-tagline">{service.tagline}</div>
-                          <div className="service-cta">
-                            <span className="cta-text">{service.cta}</span>
-                            <span className="cta-arrow">→</span>
-                          </div>
-                        </div>
+
+                {/* Right Side - Proof & Aspiration */}
+                <div className="hero-right">
+                  <div className="hero-image-container">
+                    <div className="image-carousel">
+                      <LazyImage
+                        src="/images/Hero1.webp"
+                        alt="Luxury interior design project showcasing modern living space with elegant furniture and natural lighting"
+                        className={`hero-main-image ${currentImageIndex === 0 ? 'active' : ''}`}
+                        priority={currentImageIndex === 0}
+                        loading={currentImageIndex === 0 ? 'eager' : 'lazy'}
+                      />
+                      <LazyImage
+                        src="/images/Hero2.webp"
+                        alt="Contemporary living room design with premium finishes and sophisticated color scheme"
+                        className={`hero-main-image ${currentImageIndex === 1 ? 'active' : ''}`}
+                        priority={currentImageIndex === 1}
+                        loading={currentImageIndex === 1 ? 'eager' : 'lazy'}
+                      />
+                      <LazyImage
+                        src="/images/Hero3.webp"
+                        alt="Executive office space design featuring modern workspace with professional aesthetics"
+                        className={`hero-main-image ${currentImageIndex === 2 ? 'active' : ''}`}
+                        priority={currentImageIndex === 2}
+                        loading={currentImageIndex === 2 ? 'eager' : 'lazy'}
+                      />
+                      <LazyImage
+                        src="/images/Hero4.webp"
+                        alt="Luxury home interior design with high-end materials and custom architectural elements"
+                        className={`hero-main-image ${currentImageIndex === 3 ? 'active' : ''}`}
+                        priority={currentImageIndex === 3}
+                        loading={currentImageIndex === 3 ? 'eager' : 'lazy'}
+                      />
+                    </div>
+
+                    {/* Carousel Indicators */}
+                    <div className="carousel-indicators">
+                      <button
+                        className={`indicator ${currentImageIndex === 0 ? 'active' : ''}`}
+                        onClick={() => setCurrentImageIndex(0)}
+                      ></button>
+                      <button
+                        className={`indicator ${currentImageIndex === 1 ? 'active' : ''}`}
+                        onClick={() => setCurrentImageIndex(1)}
+                      ></button>
+                      <button
+                        className={`indicator ${currentImageIndex === 2 ? 'active' : ''}`}
+                        onClick={() => setCurrentImageIndex(2)}
+                      ></button>
+                      <button
+                        className={`indicator ${currentImageIndex === 3 ? 'active' : ''}`}
+                        onClick={() => setCurrentImageIndex(3)}
+                      ></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Why Choose Us Section */}
+              <div className="why-choose-us-section">
+                <h2 className="why-choose-us-heading">
+                  Why Choose <span className="company-name-gradient">Dimensions Dzine</span>
+                </h2>
+              </div>
+
+              {/* Trust Signals - Infinite Scroll */}
+              <div className="trust-signals-scroll">
+                <div className="trust-signals-track" ref={trustTrackRef}>
+                  {[...trustItems, ...trustItems].map((item, index) => (
+                    <div key={`trust-${index}`} className="trust-card">
+                      <div className="trust-icon-container">
+                        {item.icon}
                       </div>
-                      <div className="service-content">
-                        <h3 className="service-content-title">{service.title}</h3>
-                        <p className="service-description">{service.description}</p>
-                        
-                        {/* Desktop - Regular List */}
-                        <ul className="service-features">
-                          {service.features.map((feature, index) => (
-                            <li key={index} className="feature-item">
-                              <span className="feature-icon">✓</span>
-                              {feature}
-                            </li>
-                          ))}
-                        </ul>
-                        
-                        {/* Mobile - Accordion */}
-                        <ServiceAccordion features={service.features} />
+                      <div className="trust-content">
+                        {item.title}
+                        {item.description}
                       </div>
                     </div>
                   ))}
                 </div>
-
-                {/* View More Services Button */}
-                <div className="services-view-more">
-                  <Link to="/services" className="btn-view-more-services">
-                    <span>View All Services</span>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path d="M4.16667 10H15.8333M15.8333 10L10 4.16667M15.8333 10L10 15.8333" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </Link>
-                </div>
               </div>
-            </div>
-          </div>
-        </section>
 
-        {/* How We Work Section */}
-        <section className="section process-section">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="section-title">How We Work</h2>
-              <p className="section-subtitle mt-4 mx-auto">
-                Our simple 5-step process to transform your space
-              </p>
             </div>
-            <div className="process-grid">
-              {processSteps.map((step, index) => (
-                <ScaleBounce key={step.number} delay={index * 0.15}>
-                  <div className="process-step">
-                    <div className="process-icon" style={{ backgroundColor: `${step.color}15`, color: step.color }}>
-                      <step.icon />
-                    </div>
-                    <h3 className="process-title">{step.title}</h3>
-                    <p className="process-description">{step.description}</p>
+          </section>
+
+          {/* Featured Projects Section */}
+          <FeaturedProjects />
+
+          {/* Our Services Section */}
+          <section className="section services-section">
+            <div className="padding-global-2">
+              <div className="container-large-2">
+                <div className="padding-vertical-2">
+                  {/* Homepage Services */}
+                  <div className="services-section-header">
+                    <h3 className="services-category-title">Our Services</h3>
+                    <p className="services-category-subtitle">Professional solutions for your every need</p>
                   </div>
-                </ScaleBounce>
-              ))}
-            </div>
-          </div>
-        </section>
+                  <div className="services-grid">
+                    {homepageServices.map((service) => (
+                      <div key={service.id} className="service-card" onClick={() => navigate(service.route)} style={{ cursor: 'pointer' }}>
+                        <div className="service-image-container">
+                          <LazyImage src={service.image} alt={service.title} className="service-image" />
+                          <div className="service-overlay">
+                            <div className="service-tagline">{service.tagline}</div>
+                            <div className="service-cta">
+                              <span className="cta-text">{service.cta}</span>
+                              <span className="cta-arrow">→</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="service-content">
+                          <h3 className="service-content-title">{service.title}</h3>
+                          <p className="service-description">{service.description}</p>
 
-        {/* Project Highlights Section */}
-        <section className="section project-highlights-section">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="section-title">Project Highlights</h2>
-            </div>
-            <div className="project-highlights-carousel">
-              <div className="carousel-container">
-                <div className="carousel-wrapper">
-                  <div className="carousel-slides">
-                    {sliderImages.map((image, index) => (
-                      <div
-                        key={index}
-                        className={`carousel-slide ${index === currentSlide ? 'active' : ''}`}
-                      >
-                        <div className="slide-image-wrapper">
-                          <LazyImage
-                            src={image}
-                            alt={`Project highlight ${index + 1}`}
-                            className="slide-image"
-                            loading="lazy"
-                          />
+                          {/* Desktop - Regular List */}
+                          <ul className="service-features">
+                            {service.features.map((feature, index) => (
+                              <li key={index} className="feature-item">
+                                <span className="feature-icon">✓</span>
+                                {feature}
+                              </li>
+                            ))}
+                          </ul>
+
+                          {/* Mobile - Accordion */}
+                          <ServiceAccordion features={service.features} />
                         </div>
                       </div>
                     ))}
                   </div>
 
+                  {/* View More Services Button */}
+                  <div className="services-view-more">
+                    <Link to="/services" className="btn-view-more-services">
+                      <span>View All Services</span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4.16667 10H15.8333M15.8333 10L10 4.16667M15.8333 10L10 15.8333" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* How We Work Section */}
+          <section className="section process-section">
+            <div className="container">
+              <div className="text-center mb-12">
+                <h2 className="section-title">How We Work</h2>
+                <p className="section-subtitle mt-4 mx-auto">
+                  Our simple 5-step process to transform your space
+                </p>
+              </div>
+              <div className="process-grid">
+                {processSteps.map((step, index) => (
+                  <ScaleBounce key={step.number} delay={index * 0.15}>
+                    <div className="process-step">
+                      <div className="process-icon" style={{ backgroundColor: `${step.color}15`, color: step.color }}>
+                        <step.icon />
+                      </div>
+                      <h3 className="process-title">{step.title}</h3>
+                      <p className="process-description">{step.description}</p>
+                    </div>
+                  </ScaleBounce>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Project Highlights Section */}
+          <section className="section project-highlights-section">
+            <div className="container">
+              <div className="text-center mb-12">
+                <h2 className="section-title">Project Highlights</h2>
+              </div>
+              <div className="project-highlights-carousel">
+                <div className="carousel-container">
+                  <div className="carousel-wrapper">
+                    <div className="carousel-slides">
+                      {sliderImages.map((image, index) => (
+                        <div
+                          key={index}
+                          className={`carousel-slide ${index === currentSlide ? 'active' : ''}`}
+                        >
+                          <div className="slide-image-wrapper">
+                            <LazyImage
+                              src={image}
+                              alt={`Project highlight ${index + 1}`}
+                              className="slide-image"
+                              loading="lazy"
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    <button
+                      className="carousel-arrow carousel-arrow-left"
+                      onClick={prevSlide}
+                      aria-label="Previous image"
+                    >
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </button>
+
+                    <button
+                      className="carousel-arrow carousel-arrow-right"
+                      onClick={nextSlide}
+                      aria-label="Next image"
+                    >
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div className="carousel-indicators">
+                    {sliderImages.map((_, index) => (
+                      <button
+                        key={index}
+                        className={`carousel-indicator ${index === currentSlide ? 'active' : ''}`}
+                        onClick={() => goToSlide(index)}
+                        aria-label={`Go to slide ${index + 1}`}
+                      ></button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          {/* Client Stories Section */}
+          <section className="section testimonials-section">
+            <div className="container">
+              <div className="text-center mb-12">
+                <h2 className="section-title">Client Stories</h2>
+                <p className="section-subtitle mt-2" style={{ fontSize: '0.95rem', color: '#666', fontStyle: 'italic' }}>
+                  Sourced from Google Reviews
+                </p>
+              </div>
+
+              <div className="testimonials-carousel-container">
+                <div className="testimonials-carousel-wrapper">
                   <button
-                    className="carousel-arrow carousel-arrow-left"
-                    onClick={prevSlide}
-                    aria-label="Previous image"
+                    className="testimonials-arrow testimonials-arrow-left"
+                    onClick={() => setCurrentTestimonial((currentTestimonial - 1 + testimonials.length) % testimonials.length)}
+                    aria-label="Previous testimonial"
                   >
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </button>
 
+                  <div className="testimonials-content">
+                    <div className="testimonials-rating">
+                      {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
+                        <span key={i} className="testimonials-star">★</span>
+                      ))}
+                    </div>
+                    <blockquote className="testimonials-quote">
+                      "{testimonials[currentTestimonial].content}"
+                    </blockquote>
+                    <div className="testimonials-author">
+                      <h4 className="testimonials-author-name">{testimonials[currentTestimonial].name}</h4>
+                      <p className="testimonials-author-role">{testimonials[currentTestimonial].role}</p>
+                      <span className="testimonials-author-project">{testimonials[currentTestimonial].project}</span>
+                    </div>
+                  </div>
+
                   <button
-                    className="carousel-arrow carousel-arrow-right"
-                    onClick={nextSlide}
-                    aria-label="Next image"
+                    className="testimonials-arrow testimonials-arrow-right"
+                    onClick={() => setCurrentTestimonial((currentTestimonial + 1) % testimonials.length)}
+                    aria-label="Next testimonial"
                   >
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -616,93 +699,47 @@ const Home = () => {
                   </button>
                 </div>
 
-                <div className="carousel-indicators">
-                  {sliderImages.map((_, index) => (
+                <div className="testimonials-indicators">
+                  {testimonials.map((_, index) => (
                     <button
                       key={index}
-                      className={`carousel-indicator ${index === currentSlide ? 'active' : ''}`}
-                      onClick={() => goToSlide(index)}
-                      aria-label={`Go to slide ${index + 1}`}
+                      className={`testimonials-indicator ${index === currentTestimonial ? 'active' : ''}`}
+                      onClick={() => setCurrentTestimonial(index)}
+                      aria-label={`Go to testimonial ${index + 1}`}
                     ></button>
                   ))}
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-
-        {/* Client Stories Section */}
-        <section className="section testimonials-section">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="section-title">Client Stories</h2>
-              <p className="section-subtitle mt-2" style={{ fontSize: '0.95rem', color: '#666', fontStyle: 'italic' }}>
-                Sourced from Google Reviews
-              </p>
-            </div>
-
-            <div className="testimonials-carousel-container">
-              <div className="testimonials-carousel-wrapper">
-                <button
-                  className="testimonials-arrow testimonials-arrow-left"
-                  onClick={() => setCurrentTestimonial((currentTestimonial - 1 + testimonials.length) % testimonials.length)}
-                  aria-label="Previous testimonial"
-                >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </button>
-
-                <div className="testimonials-content">
-                  <div className="testimonials-rating">
-                    {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                      <span key={i} className="testimonials-star">★</span>
-                    ))}
-                  </div>
-                  <blockquote className="testimonials-quote">
-                    "{testimonials[currentTestimonial].content}"
-                  </blockquote>
-                  <div className="testimonials-author">
-                    <h4 className="testimonials-author-name">{testimonials[currentTestimonial].name}</h4>
-                    <p className="testimonials-author-role">{testimonials[currentTestimonial].role}</p>
-                    <span className="testimonials-author-project">{testimonials[currentTestimonial].project}</span>
-                  </div>
+          {/* FAQ Section */}
+          {seoData.home.faq && (
+            <section className="section faq-home-section">
+              <div className="container">
+                <h2 className="faq-section-title section-title">Frequently Asked Questions</h2>
+                <div className="faq-list">
+                  {seoData.home.faq.map((faq, index) => (
+                    <details key={index} className="faq-item">
+                      <summary className="faq-question">{faq.question}</summary>
+                      <div className="faq-answer">
+                        <p>{faq.answer}</p>
+                      </div>
+                    </details>
+                  ))}
                 </div>
-
-                <button
-                  className="testimonials-arrow testimonials-arrow-right"
-                  onClick={() => setCurrentTestimonial((currentTestimonial + 1) % testimonials.length)}
-                  aria-label="Next testimonial"
-                >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </button>
               </div>
+            </section>
+          )}
 
-              <div className="testimonials-indicators">
-                {testimonials.map((_, index) => (
-                  <button
-                    key={index}
-                    className={`testimonials-indicator ${index === currentTestimonial ? 'active' : ''}`}
-                    onClick={() => setCurrentTestimonial(index)}
-                    aria-label={`Go to testimonial ${index + 1}`}
-                  ></button>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+          {/* Estimate Section */}
+          <EstimateSection />
 
-        {/* Estimate Section */}
-        <EstimateSection />
-
-        {/* CTA Section */}
-        <CTA />
-      </main>
-      <Footer />
-    </div>
+          {/* CTA Section */}
+          <CTA />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 };

@@ -38,7 +38,7 @@ const KitchenCalculator = () => {
       description: 'Quality modular kitchen with essential features and standard finishes.',
       features: ['Standard cabinets', 'Basic countertop', 'Essential hardware'],
       multiplier: 1.0,
-      image: '/images/Kitchen/Essentials.jpg'
+      image: '/images/Kitchen/Essentials.webp'
     },
     {
       id: 'premium',
@@ -46,7 +46,7 @@ const KitchenCalculator = () => {
       description: 'Enhanced kitchen with premium materials and modern accessories.',
       features: ['Premium cabinets', 'Quality countertop', 'Designer hardware'],
       multiplier: 1.5,
-      image: '/images/Kitchen/premium.jpg'
+      image: '/images/Kitchen/premium.webp'
     },
     {
       id: 'luxe',
@@ -54,7 +54,7 @@ const KitchenCalculator = () => {
       description: 'Luxury modular kitchen with high-end finishes and smart features.',
       features: ['Luxury cabinets', 'Premium stone countertop', 'Premium accessories'],
       multiplier: 2.2,
-      image: '/images/Kitchen/luxe.jpg'
+      image: '/images/Kitchen/luxe.webp'
     }
   ];
 

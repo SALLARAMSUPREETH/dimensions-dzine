@@ -35,7 +35,7 @@ const Home = () => {
         keywords={seoData.home.keywords}
         canonical={seoData.home.canonical}
         schema={seoData.home.schema}
-        ogImage="/images/og-home.jpg"
+        ogImage="/images/og-home.webp"
       />
       {/* Rest of your component */}
     </>
@@ -57,7 +57,7 @@ const About = () => {
         keywords={seoData.about.keywords}
         canonical={seoData.about.canonical}
         schema={seoData.about.schema}
-        ogImage="/images/og-about.jpg"
+        ogImage="/images/og-about.webp"
       />
       {/* Rest of your component */}
     </>
@@ -79,7 +79,7 @@ const Services = () => {
         keywords={seoData.services.keywords}
         canonical={seoData.services.canonical}
         schema={seoData.services.schema}
-        ogImage="/images/og-services.jpg"
+        ogImage="/images/og-services.webp"
       />
       {/* Rest of your component */}
     </>
@@ -101,7 +101,7 @@ const Projects = () => {
         keywords={seoData.projects.keywords}
         canonical={seoData.projects.canonical}
         schema={seoData.projects.schema}
-        ogImage="/images/og-projects.jpg"
+        ogImage="/images/og-projects.webp"
       />
       {/* Rest of your component */}
     </>
@@ -123,7 +123,7 @@ const Contact = () => {
         keywords={seoData.contact.keywords}
         canonical={seoData.contact.canonical}
         schema={seoData.contact.schema}
-        ogImage="/images/og-contact.jpg"
+        ogImage="/images/og-contact.webp"
       />
       {/* Rest of your component */}
     </>
@@ -145,7 +145,7 @@ const Calculator = () => {
         keywords={seoData.calculator.keywords}
         canonical={seoData.calculator.canonical}
         schema={seoData.calculator.schema}
-        ogImage="/images/og-calculator.jpg"
+        ogImage="/images/og-calculator.webp"
       />
       {/* Rest of your component */}
     </>
@@ -168,7 +168,7 @@ const Construction = () => {
         description={serviceSeoData.construction.description}
         keywords={serviceSeoData.construction.keywords}
         canonical={serviceSeoData.construction.canonical}
-        ogImage="/images/services/construction-og.jpg"
+        ogImage="/images/services/construction-og.webp"
       />
       {/* Rest of your component */}
     </>
@@ -189,7 +189,7 @@ const InteriorDesign = () => {
         description={serviceSeoData.interiorDesign.description}
         keywords={serviceSeoData.interiorDesign.keywords}
         canonical={serviceSeoData.interiorDesign.canonical}
-        ogImage="/images/services/interior-design-og.jpg"
+        ogImage="/images/services/interior-design-og.webp"
       />
       {/* Rest of your component */}
     </>
@@ -210,7 +210,7 @@ const Renovation = () => {
         description={serviceSeoData.renovation.description}
         keywords={serviceSeoData.renovation.keywords}
         canonical={serviceSeoData.renovation.canonical}
-        ogImage="/images/services/renovation-og.jpg"
+        ogImage="/images/services/renovation-og.webp"
       />
       {/* Rest of your component */}
     </>
@@ -231,7 +231,7 @@ const Consultation = () => {
         description={serviceSeoData.consultation.description}
         keywords={serviceSeoData.consultation.keywords}
         canonical={serviceSeoData.consultation.canonical}
-        ogImage="/images/services/consultation-og.jpg"
+        ogImage="/images/services/consultation-og.webp"
       />
       {/* Rest of your component */}
     </>
@@ -252,7 +252,7 @@ const Visualization3D = () => {
         description={serviceSeoData.visualization3D.description}
         keywords={serviceSeoData.visualization3D.keywords}
         canonical={serviceSeoData.visualization3D.canonical}
-        ogImage="/images/services/3d-visualization-og.jpg"
+        ogImage="/images/services/3d-visualization-og.webp"
       />
       {/* Rest of your component */}
     </>
@@ -273,7 +273,7 @@ const MaterialSourcing = () => {
         description={serviceSeoData.materialSourcing.description}
         keywords={serviceSeoData.materialSourcing.keywords}
         canonical={serviceSeoData.materialSourcing.canonical}
-        ogImage="/images/services/material-sourcing-og.jpg"
+        ogImage="/images/services/material-sourcing-og.webp"
       />
       {/* Rest of your component */}
     </>
@@ -334,19 +334,19 @@ sameAs: [
 ## 📸 Required Images for Social Sharing
 
 Create these Open Graph images (1200x630px):
-- `/public/images/og-default.jpg` - Default/Home page
-- `/public/images/og-home.jpg` - Home page specific
-- `/public/images/og-about.jpg` - About page
-- `/public/images/og-services.jpg` - Services page
-- `/public/images/og-projects.jpg` - Projects page
-- `/public/images/og-contact.jpg` - Contact page
-- `/public/images/og-calculator.jpg` - Calculator page
-- `/public/images/services/construction-og.jpg`
-- `/public/images/services/interior-design-og.jpg`
-- `/public/images/services/renovation-og.jpg`
-- `/public/images/services/consultation-og.jpg`
-- `/public/images/services/3d-visualization-og.jpg`
-- `/public/images/services/material-sourcing-og.jpg`
+- `/public/images/og-default.webp` - Default/Home page
+- `/public/images/og-home.webp` - Home page specific
+- `/public/images/og-about.webp` - About page
+- `/public/images/og-services.webp` - Services page
+- `/public/images/og-projects.webp` - Projects page
+- `/public/images/og-contact.webp` - Contact page
+- `/public/images/og-calculator.webp` - Calculator page
+- `/public/images/services/construction-og.webp`
+- `/public/images/services/interior-design-og.webp`
+- `/public/images/services/renovation-og.webp`
+- `/public/images/services/consultation-og.webp`
+- `/public/images/services/3d-visualization-og.webp`
+- `/public/images/services/material-sourcing-og.webp`
 
 ## 🎯 Target Keywords by Page
 

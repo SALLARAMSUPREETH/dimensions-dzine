@@ -79,7 +79,7 @@
 }
 
 :root {
-  --background-grey: #c2b19c;
+  --background-grey: linear-gradient(135deg, #f8f6f1 0%, #e8e6e1 100%);
   --background-black: #0d0d0e;
   --text-color: #000000b3;
   --gainsboro: #dfddda;
@@ -4533,10 +4533,6 @@ figcaption {
   line-height: 1;
 }
 
-.section {
-  background-color: var(--_primary-colors---soft-beige);
-}
-
 .section.is-fullscreen {
   background-color: var(--_primary-colors---soft-beige);
   position: relative;
@@ -5586,7 +5582,7 @@ figcaption {
 }
 
 .image-4 {
-  background-image: url('../images/06.jpg');
+  background-image: url('../images/06.webp');
   background-position: 0 0;
   background-size: 125px;
   width: 100%;
@@ -5916,7 +5912,7 @@ figcaption {
 }
 
 .hero-background-image {
-  background-image: url('../images/Space002.jpeg');
+  background-image: url('../images/Space002.webp');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5925,7 +5921,7 @@ figcaption {
 }
 
 .hero-background-image.projects-background {
-  background-image: url('../images/Space008.jpeg');
+  background-image: url('../images/Space008.webp');
   background-position: 50% 40%;
 }
 

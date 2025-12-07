@@ -4,8 +4,10 @@ export { default as CTA } from './CTA';
 export { default as ErrorBoundary } from './ErrorBoundary';
 export { default as EstimateSection } from './EstimateSection';
 export { default as FadeInUp } from './FadeInUp';
+export { default as FAQSection } from './FAQSection';
 export { default as FeaturedProjects } from './FeaturedProjects';
 export { default as FloatingButtons } from './FloatingButtons';
+export { default as GlobalSEO } from './GlobalSEO';
 export { default as LazyImage } from './LazyImage';
 export { default as ProjectShowcase } from './ProjectShowcase';
 export { default as ScaleBounce } from './ScaleBounce';
@@ -18,4 +20,3 @@ export { default as StickyScrollContainer } from './StickyScrollContainer';
 // Layout components
 export { default as Header } from './Layout/Header';
 export { default as Footer } from './Layout/Footer';
-

@@ -15,13 +15,14 @@ import LazyImage from './LazyImage';
 import { GOOGLE_FORM_CONFIG } from '../config/formConfig';
 import './ProjectShowcase.css';
 
-const ProjectShowcase = ({ projectData }) => {
+const ProjectShowcase = ({ projectData, projectStatus }) => {
   // Find first available phase
   const firstAvailablePhase = projectData.designPhases.findIndex(phase => phase.available !== false);
   const [activePhase, setActivePhase] = useState(firstAvailablePhase >= 0 ? firstAvailablePhase : 0);
   const [showModal, setShowModal] = useState(false);
   const [modalImageIndex, setModalImageIndex] = useState(0);
   const [isZoomed, setIsZoomed] = useState(false);
+  const [showAllPhotos, setShowAllPhotos] = useState(false);
   const [formStatus, setFormStatus] = useState('idle'); // 'idle', 'submitting', 'success', 'error'
   const [formErrors, setFormErrors] = useState({});
   const [formData, setFormData] = useState({
@@ -93,7 +94,11 @@ const ProjectShowcase = ({ projectData }) => {
   };
 
   const getCurrentImages = () => {
-    return projectData.designPhases[activePhase].images;
+    const images = projectData.designPhases[activePhase].images;
+    if (!showAllPhotos && images?.length > 9) {
+      return images.slice(0, 9);
+    }
+    return images;
   };
 
   const handleNextImage = () => {
@@ -188,8 +193,11 @@ const ProjectShowcase = ({ projectData }) => {
               {projectData.projectType && (
                 <span className="project-type">{projectData.projectType}</span>
               )}
-              {projectData.completionDate && (
-                <span className="project-date">Completed {projectData.completionDate}</span>
+              {!projectData.completionByDate && projectData?.completionDate && (
+                <span className="project-date">Completed {projectData?.completionDate}</span>
+              )}
+              {projectData?.completionByDate && (
+                <span className="project-date">Delivered by {projectData?.completionByDate}</span>
               )}
             </div>
             <h1 className="project-title">{projectData.title}</h1>
@@ -198,14 +206,8 @@ const ProjectShowcase = ({ projectData }) => {
               <LazyImage
                 src={projectData.heroImage}
                 alt={projectData.heroImageAlt || `${projectData.title} - Main View`}
+                quality="high"
               />
-            </div>
-
-            {/* Hero CTA */}
-            <div className="hero-cta">
-              <Link to="/contact" className="hero-cta-button">
-                Book Free Consultation
-              </Link>
             </div>
           </div>
         </section>
@@ -219,7 +221,12 @@ const ProjectShowcase = ({ projectData }) => {
                 <button
                   key={index}
                   className={`tab-button ${activePhase === index ? 'active' : ''} ${phase.available === false ? 'unavailable' : ''}`}
-                  onClick={() => phase.available !== false && setActivePhase(index)}
+                  onClick={() => {
+                    if (phase.available !== false) {
+                      setActivePhase(index);
+                      setShowAllPhotos(false);
+                    }
+                  }}
                   disabled={phase.available === false}
                   title={phase.available === false ? 'Not Available' : ''}
                 >
@@ -244,35 +251,48 @@ const ProjectShowcase = ({ projectData }) => {
                   </div>
                 </div>
               ) : (
-                <div className="project-gallery">
-                  {getCurrentImages()?.length > 0 ? getCurrentImages().map((image, index) => (
-                    <div key={index} className="gallery-item" onClick={() => handleImageClick(index)}>
-                      <LazyImage
-                        src={image.src}
-                        alt={image.alt}
-                        title={image.context || image.description}
-                      />
-                      <div className="gallery-overlay">
-                        <span>{image.name}</span>
-                      </div>
-                      {image.description && (
-                        <div className="gallery-caption">
-                          <p>{image.description}</p>
-                          {image.context && (
-                            <p className="gallery-context">{image.context}</p>
-                          )}
+                <>
+                  <div className="project-gallery">
+                    {getCurrentImages()?.length > 0 ? getCurrentImages().map((image, index) => (
+                      <div key={index} className="gallery-item" onClick={() => handleImageClick(index)}>
+                        <LazyImage
+                          src={image.src}
+                          alt={image.alt}
+                          title={image.context || image.description}
+                          quality="medium"
+                        />
+                        <div className="gallery-overlay">
+                          <span>{image.name}</span>
                         </div>
-                      )}
-                    </div>
-                  )) : (
-                    <div className="gallery-unavailable">
-                      <div className="unavailable-message">
-                        <h3>No Images Available</h3>
-                        <p>Images are being loaded...</p>
+                        {image.description && (
+                          <div className="gallery-caption">
+                            <p>{image.description}</p>
+                            {image.context && (
+                              <p className="gallery-context">{image.context}</p>
+                            )}
+                          </div>
+                        )}
                       </div>
+                    )) : (
+                      <div className="gallery-unavailable">
+                        <div className="unavailable-message">
+                          <h3>No Images Available</h3>
+                          <p>Images are being loaded...</p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                  {projectData.designPhases[activePhase]?.images?.length > 9 && !showAllPhotos && (
+                    <div className="view-all-photos-container">
+                      <button 
+                        className="view-all-photos-btn"
+                        onClick={() => setShowAllPhotos(true)}
+                      >
+                        View All {projectData.designPhases[activePhase].images.length} Photos
+                      </button>
                     </div>
                   )}
-                </div>
+                </>
               )}
             </div>
           </div>
@@ -469,7 +489,7 @@ const ProjectShowcase = ({ projectData }) => {
               </div>
             </div>
           </section>
-        ) : (
+        ) : projectStatus === 'Completed' ? (
           <section className="testimonial-fallback">
             <div className="container">
               <div className="fallback-content">
@@ -492,7 +512,7 @@ const ProjectShowcase = ({ projectData }) => {
               </div>
             </div>
           </section>
-        )}
+        ) : null}
 
         {/* Call to Action */}
         <section className="project-showcase-cta">
@@ -584,11 +604,12 @@ const ProjectShowcase = ({ projectData }) => {
 
             {/* Image */}
             <div className="modal-image-container" onClick={(e) => e.stopPropagation()}>
-              <img
+              <LazyImage
                 src={getCurrentImages()[modalImageIndex].src}
                 alt={getCurrentImages()[modalImageIndex].alt}
                 title={getCurrentImages()[modalImageIndex].context || getCurrentImages()[modalImageIndex].description}
                 className={isZoomed ? 'modal-image-zoomed' : 'modal-image-normal'}
+                quality="high"
               />
             </div>
 

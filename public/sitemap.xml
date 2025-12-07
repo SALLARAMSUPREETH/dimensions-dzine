@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
   <!-- Home Page -->
   <url>
     <loc>https://dimensionsdzine.com/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://dimensionsdzine.com/images/og-home.webp</image:loc>
+      <image:title>Dimensions Dzine - Interior Designers in Hyderabad</image:title>
+      <image:caption>Premium interior design and construction services in Hyderabad</image:caption>
+    </image:image>
   </url>
   
   <!-- About Page -->
   <url>
     <loc>https://dimensionsdzine.com/about</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -21,22 +29,30 @@
   <!-- Services Page -->
   <url>
     <loc>https://dimensionsdzine.com/services</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://dimensionsdzine.com/images/services/interior-services.webp</image:loc>
+      <image:title>Interior Design Services Hyderabad</image:title>
+    </image:image>
   </url>
   
   <!-- Projects/Portfolio Page -->
   <url>
     <loc>https://dimensionsdzine.com/projects</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://dimensionsdzine.com/images/og-projects.webp</image:loc>
+      <image:title>Interior Design Projects Portfolio</image:title>
+    </image:image>
   </url>
   
   <url>
     <loc>https://dimensionsdzine.com/portfolio</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -44,7 +60,7 @@
   <!-- Contact Page -->
   <url>
     <loc>https://dimensionsdzine.com/contact</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -52,7 +68,7 @@
   <!-- Calculator Page -->
   <url>
     <loc>https://dimensionsdzine.com/calculator</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -60,42 +76,50 @@
   <!-- Service Pages -->
   <url>
     <loc>https://dimensionsdzine.com/services/construction</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dimensionsdzine.com/images/services/construction-services.webp</image:loc>
+      <image:title>Construction Services Hyderabad</image:title>
+    </image:image>
   </url>
   
   <url>
     <loc>https://dimensionsdzine.com/services/interior-design</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dimensionsdzine.com/images/services/interior-services.webp</image:loc>
+      <image:title>Interior Design Services Hyderabad</image:title>
+    </image:image>
   </url>
   
   <url>
     <loc>https://dimensionsdzine.com/services/renovation</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dimensionsdzine.com/services/consultation</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dimensionsdzine.com/services/3d-visualization</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dimensionsdzine.com/services/material-sourcing</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -103,21 +127,21 @@
   <!-- Calculator Sub-pages -->
   <url>
     <loc>https://dimensionsdzine.com/estimate/full-home-interior</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://dimensionsdzine.com/estimate/kitchen-interior</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://dimensionsdzine.com/estimate/wardrobe-design</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

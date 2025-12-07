@@ -19,7 +19,7 @@ const Consultation = () => {
         description={serviceSeoData.consultation.description}
         keywords={serviceSeoData.consultation.keywords}
         canonical={serviceSeoData.consultation.canonical}
-        ogImage="/images/services/consultation-og.jpg"
+        ogImage="/images/services/consultation-og.webp"
       />
       <div className="page-wrapper-2">
         <Header />
@@ -51,7 +51,7 @@ const Consultation = () => {
                 </div>
                 <div className="intro-image-wrapper">
                   <LazyImage
-                    src="/images/services/consultation - services.jpg"
+                    src="/images/services/consultation - services.webp"
                     alt="Design Consultation Services"
                     className="intro-image"
                   />
@@ -186,8 +186,8 @@ const Consultation = () => {
                   <Link to="/contact" className="btn-primary-construction">
                     Book Your Consultation
                   </Link>
-                  <Link to="/calculator" className="btn-secondary-construction">
-                    Calculate Cost
+                  <Link to="/portfolio" className="btn-secondary-construction">
+                    Our Work
                   </Link>
                 </div>
               </div>

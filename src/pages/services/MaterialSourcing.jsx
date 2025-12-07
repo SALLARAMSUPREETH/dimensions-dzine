@@ -19,7 +19,7 @@ const MaterialSourcing = () => {
         description={serviceSeoData.materialSourcing.description}
         keywords={serviceSeoData.materialSourcing.keywords}
         canonical={serviceSeoData.materialSourcing.canonical}
-        ogImage="/images/services/material-sourcing-og.jpg"
+        ogImage="/images/services/material-sourcing-og.webp"
       />
       <div className="page-wrapper-2">
         <Header />
@@ -51,7 +51,7 @@ const MaterialSourcing = () => {
                 </div>
                 <div className="intro-image-wrapper">
                   <LazyImage
-                    src="/images/services/material-services.jpg"
+                    src="/images/services/material-services.webp"
                     alt="Material Sourcing Services"
                     className="intro-image"
                   />

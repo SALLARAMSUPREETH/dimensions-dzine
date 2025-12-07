@@ -19,7 +19,7 @@ const Renovation = () => {
         description={serviceSeoData.renovation.description}
         keywords={serviceSeoData.renovation.keywords}
         canonical={serviceSeoData.renovation.canonical}
-        ogImage="/images/services/renovation-og.jpg"
+        ogImage="/images/services/renovation-og.webp"
       />
       <div className="page-wrapper-2">
         <Header />
@@ -51,7 +51,7 @@ const Renovation = () => {
                 </div>
                 <div className="intro-image-wrapper">
                   <LazyImage
-                    src="/images/services/renovation-services.jpg"
+                    src="/images/services/renovation-services.webp"
                     alt="Renovation Services"
                     className="intro-image"
                   />
@@ -186,7 +186,7 @@ const Renovation = () => {
                   <Link to="/contact" className="btn-primary-construction">
                     Get Your Free Quote
                   </Link>
-                  <Link to="/calculator" className="btn-secondary-construction">
+                  <Link to="/estimate/full-home-interior" className="btn-secondary-construction">
                     Calculate Cost
                   </Link>
                 </div>

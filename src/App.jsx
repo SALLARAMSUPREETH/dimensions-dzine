@@ -19,6 +19,7 @@ import Calculator from './pages/Calculator';
 import FullHomeInteriorStepper from './pages/FullHomeInteriorStepper';
 import KitchenCalculator from './pages/KitchenCalculator';
 import WardrobeCalculator from './pages/WardrobeCalculator';
+import ConstructionEstimator from './pages/ConstructionEstimator';
 import DetailProjects from './pages/DetailProjects';
 import DetailCategories from './pages/DetailCategories';
 import { projectsRegistry } from './data/projects';
@@ -54,6 +55,7 @@ function AppContent() {
           <Route path="/estimate/full-home-interior" element={<FullHomeInteriorStepper />} />
           <Route path="/estimate/kitchen-interior" element={<KitchenCalculator />} />
           <Route path="/estimate/wardrobe-design" element={<WardrobeCalculator />} />
+          <Route path="/estimate/construction" element={<ConstructionEstimator />} />
           <Route path="/detail-projects" element={<DetailProjects />} />
           <Route path="/detail-categories" element={<DetailCategories />} />
           {/* Dynamic project routes - automatically generated from projectsRegistry */}
@@ -61,7 +63,7 @@ function AppContent() {
             <Route
               key={project.id}
               path={`/projects/${project.id}`}
-              element={<ProjectShowcase projectData={project.data} />}
+              element={<ProjectShowcase projectData={project.data} projectStatus={project.status} />}
             />
           ))}
 

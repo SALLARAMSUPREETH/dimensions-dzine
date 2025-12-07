@@ -20,7 +20,8 @@ const EstimateSection = () => {
       title: 'Full Home Interior',
       description: 'Complete home interior design and execution',
       features: ['Living room design', 'Bedroom interiors', 'Kitchen design', 'Bathroom design'],
-      color: '#546736'
+      color: '#546736',
+      calculatorName: 'Home Interior Calculator'
     },
     {
       id: 'kitchen',
@@ -28,7 +29,8 @@ const EstimateSection = () => {
       title: 'Kitchen Interior',
       description: 'Complete kitchen design and modular solutions',
       features: ['Modular kitchen design', 'Cabinet installation', 'Countertop selection', 'Appliance integration'],
-      color: '#7c4530'
+      color: '#7c4530',
+      calculatorName: 'Kitchen Calculator'
     },
     {
       id: 'wardrobe',
@@ -36,7 +38,8 @@ const EstimateSection = () => {
       title: 'Wardrobe Design',
       description: 'Custom wardrobe design and installation',
       features: ['Custom wardrobe design', 'Premium materials', 'Space optimization', 'Installation service'],
-      color: '#546736'
+      color: '#546736',
+      calculatorName: 'Wardrobe Calculator'
     }
   ];
 
@@ -122,7 +125,7 @@ const EstimateSection = () => {
 
                 <div className="estimate-card-action">
                   <button className="estimate-calculate-btn" style={{ backgroundColor: service.color }}>
-                    CALCULATE &gt;
+                    {service.calculatorName} &gt;
                   </button>
                 </div>
               </div>

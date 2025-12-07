@@ -26,9 +26,9 @@ const FeaturedProjects = () => {
   }, []);
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      className="section projects-section" 
+      className="section projects-section"
       aria-labelledby="featured-projects-title"
     >
       <div className="container">
@@ -39,24 +39,24 @@ const FeaturedProjects = () => {
             </h2>
           </div>
           <p className="section-subtitle mx-auto">
-            Discover our most impactful architectural projects that showcase innovation, 
+            Discover our most impactful architectural projects that showcase innovation,
             sustainability, and exceptional design excellence.
           </p>
         </div>
-        
+
         <div className="projects-grid" role="list">
-          {featuredProjects.map((project, index) => (
-            <Link 
-              key={project.id} 
-              to={project.route} 
+          {featuredProjects.slice(0, 3).map((project, index) => (
+            <Link
+              key={project.id}
+              to={project.route}
               className="project-card"
               role="listitem"
               aria-label={`View details for ${project.title} project`}
               tabIndex={0}
             >
               <div className="project-image-wrapper">
-                <LazyImage 
-                  src={project.image} 
+                <LazyImage
+                  src={project.image}
                   alt={`${project.title} - ${project.category} project showcasing ${project.description}`}
                   loading={index < 3 ? "eager" : "lazy"}
                   className="project-image"
@@ -69,12 +69,12 @@ const FeaturedProjects = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="project-content">
                 <div className="project-info">
-                  <h3 className="project-title">{project.title}</h3>
+                  <h3 className="home-project-title">{project.title}</h3>
                   <p className="project-description">{project.description}</p>
-                  
+
                   <div className="project-meta" aria-label="Project details">
                     <div className="project-timeline" title="Project timeline">
                       <span className="sr-only">Timeline: </span>
@@ -86,33 +86,33 @@ const FeaturedProjects = () => {
                     </div>
                   </div>
                 </div>
-                
+
 
               </div>
             </Link>
           ))}
         </div>
-        
+
         <div className="projects-view-more">
-          <Link 
-            to="/projects" 
+          <Link
+            to="/projects"
             className="btn-view-more-projects"
             aria-label="View all architectural projects in our portfolio"
           >
             <span>View All Projects</span>
-            <svg 
-              width="20" 
-              height="20" 
-              viewBox="0 0 20 20" 
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
               fill="none"
               aria-hidden="true"
               role="presentation"
             >
-              <path 
-                d="M4.16667 10H15.8333M15.8333 10L10 4.16667M15.8333 10L10 15.8333" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
+              <path
+                d="M4.16667 10H15.8333M15.8333 10L10 4.16667M15.8333 10L10 15.8333"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
                 strokeLinejoin="round"
               />
             </svg>

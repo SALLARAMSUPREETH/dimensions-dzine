@@ -36,7 +36,7 @@ const WardrobeCalculator = () => {
       description: 'Quality wardrobes with essential features and standard finishes.',
       features: ['Standard materials', 'Basic hardware', 'Essential accessories'],
       multiplier: 1.0,
-      image: '/images/Home-011_1-p-1080.jpeg'
+      image: '/images/Home-011_1-p-1080.webp'
     },
     {
       id: 'premium',
@@ -44,7 +44,7 @@ const WardrobeCalculator = () => {
       description: 'Enhanced wardrobes with premium materials and modern accessories.',
       features: ['Premium materials', 'Quality hardware', 'Designer accessories'],
       multiplier: 1.5,
-      image: '/images/Home-016_1-p-1080.jpeg'
+      image: '/images/Home-016_1-p-1080.webp'
     },
     {
       id: 'luxe',
@@ -52,7 +52,7 @@ const WardrobeCalculator = () => {
       description: 'Luxury wardrobes with high-end finishes and smart features.',
       features: ['Luxury materials', 'Premium hardware', 'Smart accessories'],
       multiplier: 2.2,
-      image: '/images/Home-020_1-p-1080.jpeg'
+      image: '/images/Home-020_1-p-1080.webp'
     }
   ];
 

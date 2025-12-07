@@ -142,7 +142,7 @@ const Contact = () => {
         keywords={seoData.contact.keywords}
         canonical={seoData.contact.canonical}
         schema={seoData.contact.schema}
-        ogImage="/images/og-contact.jpg"
+        ogImage="/images/og-contact.webp"
       />
       <div className="page-wrapper">
         <Header />
@@ -370,7 +370,7 @@ const Contact = () => {
                 <div className="card-arrow">→</div>
               </Link>
 
-              <Link to="/calculator" className="action-card calculator-card">
+              <Link to="/estimate/full-home-interior" className="action-card calculator-card">
                 <div className="card-icon-wrapper">
                   <MdCalculate className="card-icon" />
                 </div>

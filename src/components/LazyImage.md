@@ -19,7 +19,7 @@ A reusable higher-order component that wraps images with beautiful loading state
 import LazyImage from './components/LazyImage';
 
 <LazyImage 
-  src="/path/to/image.jpg" 
+  src="/path/to/image.webp" 
   alt="Description of image" 
 />
 ```
@@ -27,7 +27,7 @@ import LazyImage from './components/LazyImage';
 ### With Custom Styling
 ```jsx
 <LazyImage 
-  src="/path/to/image.jpg" 
+  src="/path/to/image.webp" 
   alt="Description of image"
   className="my-custom-class"
   style={{ borderRadius: '8px' }}
@@ -37,7 +37,7 @@ import LazyImage from './components/LazyImage';
 ### With Click Handler
 ```jsx
 <LazyImage 
-  src="/path/to/image.jpg" 
+  src="/path/to/image.webp" 
   alt="Description of image"
   onClick={() => console.log('Image clicked!')}
 />
@@ -46,7 +46,7 @@ import LazyImage from './components/LazyImage';
 ### All Props
 ```jsx
 <LazyImage 
-  src="/path/to/image.jpg"           // Required: Image source
+  src="/path/to/image.webp"           // Required: Image source
   alt="Description"                  // Required: Alt text
   className="custom-class"           // Optional: CSS class
   style={{ width: '100%' }}         // Optional: Inline styles

@@ -32,7 +32,7 @@ export const smashArenaData = {
   subtitle: "Premium sports facility featuring multiple badminton courts, spectator areas, and modern amenities",
   completionDate: "March 2024",
   projectType: "Sports Facility",
-  heroImage: "/images/1-min.png",
+  heroImage: "/images/SmashArena/final/IMG-20251101-WA0005.webp",
   heroImageAlt: "Smash Arena completed sports facility showing professional badminton courts with modern lighting and spectator seating",
 
   // Project metadata
@@ -72,42 +72,42 @@ export const smashArenaData = {
       name: "3D Renders",
       images: [
         {
-          src: "/images/SmashArena/renders/1-min-p-3200.png",
+          src: "/images/SmashArena/renders/1-min-p-3200.webp",
           alt: "Smash Arena 3D render showing main entrance and exterior design",
           name: "Main Entrance Render",
           description: "3D visualization of the main entrance with outdoor seating",
           context: "Exterior design and entrance planning"
         },
         {
-          src: "/images/SmashArena/renders/3-min-p-3200.png",
+          src: "/images/SmashArena/renders/3-min-p-3200.webp",
           alt: "Smash Arena interior badminton courts 3D render",
           name: "Court Interior Render",
           description: "3D render of the badminton courts with professional lighting",
           context: "Interior court design visualization"
         },
         {
-          src: "/images/SmashArena/renders/4-min-p-3200.png",
+          src: "/images/SmashArena/renders/4-min-p-3200.webp",
           alt: "Smash Arena exterior night view 3D render",
           name: "Night View Render",
           description: "3D render showcasing architectural lighting design",
           context: "Night-time lighting and facade design"
         },
         {
-          src: "/images/SmashArena/renders/5-min-p-3200.png",
+          src: "/images/SmashArena/renders/5-min-p-3200.webp",
           alt: "Smash Arena court interior detail 3D render",
           name: "Court Detail Render",
           description: "Detailed 3D view of court area with spectator seating",
           context: "Interior design with spectator facilities"
         },
         {
-          src: "/images/SmashArena/renders/6-min.png",
+          src: "/images/SmashArena/renders/6-min.webp",
           alt: "Smash Arena multi-court panoramic 3D render",
           name: "Multi-Court Render",
           description: "Panoramic 3D view of multiple courts and spectator areas",
           context: "Multi-court facility layout visualization"
         },
         {
-          src: "/images/SmashArena/renders/7-min-p-3200.png",
+          src: "/images/SmashArena/renders/7-min-p-3200.webp",
           alt: "Smash Arena kids play area 3D render",
           name: "Kids Area Render",
           description: "3D render of children's play area with safety features",
@@ -120,70 +120,70 @@ export const smashArenaData = {
       name: "Progress Shots",
       images: [
         {
-          src: "/images/SmashArena/progressshots/IMG-20251101-WA0009.jpg",
+          src: "/images/SmashArena/progressshots/IMG-20251101-WA0009.webp",
           alt: "Smash Arena construction progress - foundation work",
           name: "Foundation Stage",
           description: "Initial construction phase showing foundation work",
           context: "Early construction documentation"
         },
         {
-          src: "/images/SmashArena/progressshots/IMG-20251101-WA0011.jpg",
+          src: "/images/SmashArena/progressshots/IMG-20251101-WA0011.webp",
           alt: "Smash Arena construction progress - structural development",
           name: "Structural Work",
           description: "Mid-construction showing structural development",
           context: "Structural phase progress"
         },
         {
-          src: "/images/SmashArena/progressshots/IMG-20251101-WA0012.jpg",
+          src: "/images/SmashArena/progressshots/IMG-20251101-WA0012.webp",
           alt: "Smash Arena construction progress - interior framing",
           name: "Interior Framing",
           description: "Interior framing and partition work in progress",
           context: "Interior construction phase"
         },
         {
-          src: "/images/SmashArena/progressshots/IMG-20251101-WA0013.jpg",
+          src: "/images/SmashArena/progressshots/IMG-20251101-WA0013.webp",
           alt: "Smash Arena construction progress - ceiling work",
           name: "Ceiling Installation",
           description: "Ceiling and overhead work installation",
           context: "Ceiling construction phase"
         },
         {
-          src: "/images/SmashArena/progressshots/IMG-20251101-WA0014.jpg",
+          src: "/images/SmashArena/progressshots/IMG-20251101-WA0014.webp",
           alt: "Smash Arena construction progress - flooring preparation",
           name: "Flooring Prep",
           description: "Court flooring preparation and leveling",
           context: "Flooring installation phase"
         },
         {
-          src: "/images/SmashArena/progressshots/IMG-20251101-WA0015.jpg",
+          src: "/images/SmashArena/progressshots/IMG-20251101-WA0015.webp",
           alt: "Smash Arena construction progress - electrical work",
           name: "Electrical Installation",
           description: "Electrical wiring and lighting installation",
           context: "MEP installation phase"
         },
         {
-          src: "/images/SmashArena/progressshots/IMG-20251101-WA0016.jpg",
+          src: "/images/SmashArena/progressshots/IMG-20251101-WA0016.webp",
           alt: "Smash Arena construction progress - painting work",
           name: "Painting Phase",
           description: "Wall painting and finishing work",
           context: "Finishing phase documentation"
         },
         {
-          src: "/images/SmashArena/progressshots/IMG-20251101-WA0017.jpg",
+          src: "/images/SmashArena/progressshots/IMG-20251101-WA0017.webp",
           alt: "Smash Arena construction progress - court marking",
           name: "Court Marking",
           description: "Professional court line marking in progress",
           context: "Court finishing details"
         },
         {
-          src: "/images/SmashArena/progressshots/IMG-20251101-WA0018.jpg",
+          src: "/images/SmashArena/progressshots/IMG-20251101-WA0018.webp",
           alt: "Smash Arena construction progress - lighting setup",
           name: "Lighting Setup",
           description: "Professional sports lighting installation",
           context: "Lighting system installation"
         },
         {
-          src: "/images/SmashArena/progressshots/IMG-20251101-WA0019.jpg",
+          src: "/images/SmashArena/progressshots/IMG-20251101-WA0019.webp",
           alt: "Smash Arena construction progress - seating installation",
           name: "Seating Installation",
           description: "Spectator seating area setup",
@@ -196,21 +196,21 @@ export const smashArenaData = {
       name: "Final Execution",
       images: [
         {
-          src: "/images/SmashArena/final/IMG-20251101-WA0004.jpg",
+          src: "/images/SmashArena/final/IMG-20251101-WA0004.webp",
           alt: "Smash Arena completed - main entrance view",
           name: "Main Entrance",
           description: "Completed main entrance with professional signage and landscaping",
           context: "Final entrance design and branding"
         },
         {
-          src: "/images/SmashArena/final/IMG-20251101-WA0005.jpg",
+          src: "/images/SmashArena/final/IMG-20251101-WA0005.webp",
           alt: "Smash Arena completed - interior courts view",
           name: "Badminton Courts",
           description: "Fully completed badminton courts with professional lighting and flooring",
           context: "Completed sports facility ready for play"
         },
         {
-          src: "/images/SmashArena/final/IMG-20251101-WA0007.jpg",
+          src: "/images/SmashArena/final/IMG-20251101-WA0007.webp",
           alt: "Smash Arena completed - overall facility view",
           name: "Facility Overview",
           description: "Complete facility view showing all courts and amenities",
@@ -225,16 +225,16 @@ export const smashArenaData = {
     {
       icon: "FaClock",
       title: "Timeline",
-      description: "45 days",
+      description: "60 days",
       detail: "From concept to completion",
-      value: "45 days"
+      value: "60 days"
     },
     {
       icon: "FaRulerCombined",
       title: "Project Size",
-      description: "15,000 sq ft",
+      description: "4,000 sq ft",
       detail: "Total built-up area",
-      value: "15,000 sq ft"
+      value: "4,000 sq ft"
     },
     {
       icon: "FaBuilding",
@@ -268,34 +268,34 @@ export const smashArenaData = {
 
   testimonial: {
     quote: "Working with Dimension DZine was seamless. They delivered exactly as promised in record time. The attention to detail and quality of execution exceeded our expectations. The arena has become a landmark in our area and we couldn't be happier with the results.",
-    author: "Rajesh Kumar",
+    author: "B Ganesh",
     designation: "Owner, Smash Arena",
     rating: 4.8,
     totalReviews: 12,
-    clientImage: "/images/client-rajesh.jpg",
     verified: true
   }
 };
 
 // Construction Project 1 Data
 export const construction1Data = {
-  title: "Commercial Construction Project",
-  subtitle: "Modern commercial building construction with premium finishes and professional execution",
-  completionDate: "October 2024",
-  projectType: "Commercial Construction",
-  heroImage: "/images/Construction_1/render/WhatsApp%20Image%202025-10-19%20at%2012.43.40%20PM.jpeg",
-  heroImageAlt: "Commercial construction project showing modern building design and professional execution",
+  title: "Residential Construction Project",
+  subtitle: "Modern Residential building construction with premium finishes and professional execution",
+  completionDate: "Feb 2026",
+  completionByDate: "Feb 2026",
+  projectType: "Residential Construction",
+  heroImage: "/images/Construction_1/render/WhatsApp%20Image%202025-10-19%20at%2012.43.40%20PM.webp",
+  heroImageAlt: "Residential construction project showing modern building design and professional execution",
 
-  tags: ["Construction", "Commercial", "Turnkey", "Building", "Modern"],
-  industry: "Commercial",
+  tags: ["Construction", "Residential", "Turnkey", "Building", "Modern"],
+  industry: "Residential",
   category: "Construction",
   budget: "₹50-100 Lakhs",
   teamSize: "12 members",
 
   story: [
-    "This commercial construction project showcases our expertise in delivering high-quality building construction with attention to detail and timely execution.",
+    "This Residential construction project showcases our expertise in delivering high-quality building construction with attention to detail and timely execution.",
     "The project involved complete construction from foundation to finishing, including structural work, electrical, plumbing, and interior fit-outs.",
-    "Our team ensured premium quality materials and professional workmanship throughout the construction process, resulting in a modern commercial facility."
+    "Our team ensured premium quality materials and professional workmanship throughout the construction process, resulting in a modern Residential facility."
   ],
 
   designPhases: [
@@ -308,10 +308,10 @@ export const construction1Data = {
       name: "3D Renders",
       images: [
         {
-          src: "/images/Construction_1/render/WhatsApp%20Image%202025-10-19%20at%2012.43.40%20PM.jpeg",
-          alt: "Commercial construction 3D render showing building design",
+          src: "/images/Construction_1/render/WhatsApp%20Image%202025-10-19%20at%2012.43.40%20PM.webp",
+          alt: "Residential construction 3D render showing building design",
           name: "Building Render",
-          description: "3D visualization of the commercial building design",
+          description: "3D visualization of the Residential building design",
           context: "Architectural design visualization"
         }
       ],
@@ -321,196 +321,196 @@ export const construction1Data = {
       name: "Progress Shots",
       images: [
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.46%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.46%20PM.webp",
           alt: "Construction progress - initial phase",
           name: "Initial Phase",
           description: "Early construction phase documentation",
           context: "Foundation and initial work"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.48%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.48%20PM.webp",
           alt: "Construction progress - structural work",
           name: "Structural Work",
           description: "Structural development phase",
           context: "Building structure construction"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.49%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.49%20PM.webp",
           alt: "Construction progress - ongoing work",
           name: "Construction Progress",
           description: "Ongoing construction activities",
           context: "Mid-construction phase"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.50%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.50%20PM.webp",
           alt: "Construction progress - building development",
           name: "Building Development",
           description: "Building structure taking shape",
           context: "Structural development"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.51%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.51%20PM.webp",
           alt: "Construction progress - detailed work",
           name: "Detailed Work",
           description: "Detailed construction work in progress",
           context: "Precision construction"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.53%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.53%20PM.webp",
           alt: "Construction progress - advanced stage",
           name: "Advanced Stage",
           description: "Advanced construction phase",
           context: "Near completion work"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.56%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.39.56%20PM.webp",
           alt: "Construction progress - finishing work",
           name: "Finishing Work",
           description: "Finishing touches being applied",
           context: "Final construction phase"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.01%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.01%20PM.webp",
           alt: "Construction progress - quality check",
           name: "Quality Check",
           description: "Quality inspection during construction",
           context: "Quality assurance"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.09%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.09%20PM.webp",
           alt: "Construction progress - material installation",
           name: "Material Installation",
           description: "Premium materials being installed",
           context: "Material work"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.12%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.12%20PM.webp",
           alt: "Construction progress - professional execution",
           name: "Professional Execution",
           description: "Professional construction execution",
           context: "Expert workmanship"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.15%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.15%20PM.webp",
           alt: "Construction progress - structural details",
           name: "Structural Details",
           description: "Detailed structural work",
           context: "Structural precision"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.17%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.17%20PM.webp",
           alt: "Construction progress - building progress",
           name: "Building Progress",
           description: "Steady building progress",
           context: "Construction advancement"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.20%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.20%20PM.webp",
           alt: "Construction progress - ongoing development",
           name: "Ongoing Development",
           description: "Continuous development work",
           context: "Progress documentation"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.21%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.21%20PM.webp",
           alt: "Construction progress - construction site",
           name: "Construction Site",
           description: "Active construction site",
           context: "Site management"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.23%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.23%20PM.webp",
           alt: "Construction progress - work in progress",
           name: "Work in Progress",
           description: "Various construction activities",
           context: "Multi-tasking execution"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.30%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.30%20PM.webp",
           alt: "Construction progress - building structure",
           name: "Building Structure",
           description: "Building structure development",
           context: "Structural work"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.45%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.45%20PM.webp",
           alt: "Construction progress - construction details",
           name: "Construction Details",
           description: "Detailed construction work",
           context: "Attention to detail"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.53%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.40.53%20PM.webp",
           alt: "Construction progress - professional work",
           name: "Professional Work",
           description: "Professional construction standards",
           context: "Quality workmanship"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.41.03%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.41.03%20PM.webp",
           alt: "Construction progress - advanced construction",
           name: "Advanced Construction",
           description: "Advanced construction techniques",
           context: "Modern methods"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.41.22%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.41.22%20PM.webp",
           alt: "Construction progress - building development",
           name: "Building Development",
           description: "Steady building development",
           context: "Progress tracking"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.41.27%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.41.27%20PM.webp",
           alt: "Construction progress - construction phase",
           name: "Construction Phase",
           description: "Key construction phase",
           context: "Milestone achievement"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.41.40%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.41.40%20PM.webp",
           alt: "Construction progress - work execution",
           name: "Work Execution",
           description: "Efficient work execution",
           context: "Project management"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.41.47%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.41.47%20PM.webp",
           alt: "Construction progress - construction quality",
           name: "Construction Quality",
           description: "High-quality construction work",
           context: "Quality standards"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.41.53%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.41.53%20PM.webp",
           alt: "Construction progress - building progress",
           name: "Building Progress",
           description: "Visible building progress",
           context: "Progress visualization"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.42.21%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.42.21%20PM.webp",
           alt: "Construction progress - construction work",
           name: "Construction Work",
           description: "Ongoing construction work",
           context: "Active construction"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.42.29%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.42.29%20PM.webp",
           alt: "Construction progress - building structure",
           name: "Building Structure",
           description: "Building structure taking shape",
           context: "Structural development"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.42.43%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.42.43%20PM.webp",
           alt: "Construction progress - construction details",
           name: "Construction Details",
           description: "Detailed construction documentation",
           context: "Detail work"
         },
         {
-          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.43.30%20PM.jpeg",
+          src: "/images/Construction_1/progress/WhatsApp%20Image 2025-10-19%20at%2012.43.30%20PM.webp",
           alt: "Construction progress - final stages",
           name: "Final Stages",
           description: "Final construction stages",
@@ -530,23 +530,23 @@ export const construction1Data = {
     {
       icon: "FaClock",
       title: "Timeline",
-      description: "6 months",
+      description: "1 Year",
       detail: "From foundation to completion",
-      value: "6 months"
+      value: "1 Year"
     },
     {
       icon: "FaRulerCombined",
       title: "Project Size",
-      description: "25,000 sq ft",
+      description: "1650 sq ft",
       detail: "Total built-up area",
-      value: "25,000 sq ft"
+      value: "1650 sq ft"
     },
     {
       icon: "FaBuilding",
       title: "Client Type",
-      description: "Commercial",
-      detail: "Commercial building",
-      value: "Commercial"
+      description: "Residential",
+      detail: "Residential building",
+      value: "Residential"
     },
     {
       icon: "FaMapMarkerAlt",
@@ -562,211 +562,210 @@ export const construction1Data = {
       detail: "Complete building construction",
       value: "Turnkey"
     }
-  ],
-
-  testimonial: {
-    quote: "Excellent construction work with professional execution. The team delivered on time with quality materials and workmanship. Highly recommended for commercial projects.",
-    author: "Project Owner",
-    designation: "Commercial Developer",
-    rating: 4.9,
-    totalReviews: 5,
-    verified: true
-  }
+  ]
 };
 
-// Sadbhavana Apartment Project Data
+// 3BHK Project Data
 export const sadbhavanaApartmentData = {
-  title: "Sadbhavana Apartment",
-  subtitle: "Luxury residential apartment complex with modern interiors and premium amenities",
-  completionDate: "September 2024",
-  projectType: "Residential Apartment",
-  heroImage: "/images/SadbhavanaApartment/renders/Image_1.png",
-  heroImageAlt: "Sadbhavana Apartment luxury residential complex with modern design",
+  title: "3BHK Apartment Interior",
+  subtitle: "Modern 3BHK apartment interior design with contemporary aesthetics and premium finishes",
+  completionDate: "Dec 2025",
+  projectType: "Residential Interior",
+  heroImage: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.20%20PM.webp",
+  heroImageAlt: "3BHK apartment interior with modern design and luxury finishes",
 
-  tags: ["Residential", "Apartment", "Interior Design", "Luxury", "Modern"],
+  tags: ["Residential", "3BHK", "Interior Design", "Modern", "Apartment"],
   industry: "Residential",
   category: "Residential Interiors",
   budget: "₹30-60 Lakhs",
   teamSize: "10 members",
 
   story: [
-    "Sadbhavana Apartment represents a comprehensive residential interior design project featuring modern aesthetics and luxury finishes.",
-    "The project involved complete interior design and execution for multiple apartment units, including living rooms, bedrooms, kitchens, and common areas.",
-    "Our team created stunning 3D visualizations before execution, ensuring the client's vision was perfectly realized with premium materials and professional workmanship."
+    "This 3BHK apartment interior project showcases our expertise in creating modern, functional living spaces with contemporary design elements.",
+    "The project involved complete interior design and execution including living room, bedrooms, kitchen, and all common areas with premium materials and finishes.",
+    "From initial concept sketches to 3D visualizations and final execution, we delivered a stunning transformation that exceeded client expectations."
   ],
 
   designPhases: [
     {
       name: "Concept Sketches",
-      images: [],
-      available: false
+      images: [
+        {
+          src: "/images/SadbhavanaApartment/sketch/Screenshot%202025-12-07%20141608.webp",
+          alt: "3BHK apartment concept sketch",
+          name: "Initial Concept",
+          description: "Conceptual design sketch for the 3BHK apartment",
+          context: "Design planning phase"
+        }
+      ],
+      available: true
     },
     {
       name: "3D Renders",
       images: [
         {
-          src: "/images/SadbhavanaApartment/renders/Image_1.png",
-          alt: "Sadbhavana Apartment 3D render - living area",
+          src: "/images/SadbhavanaApartment/renders/Image_1.webp",
+          alt: "3BHK apartment 3D render - living area",
           name: "Living Area Render",
           description: "3D visualization of modern living space",
           context: "Living room design"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Image_2.png",
+          src: "/images/SadbhavanaApartment/renders/Image_2.webp",
           alt: "Sadbhavana Apartment 3D render - interior view",
           name: "Interior View",
           description: "Interior space visualization",
           context: "Interior design"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Image_4.png",
+          src: "/images/SadbhavanaApartment/renders/Image_4.webp",
           alt: "Sadbhavana Apartment 3D render - modern design",
           name: "Modern Design",
           description: "Contemporary design elements",
           context: "Modern aesthetics"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Image_5.png",
+          src: "/images/SadbhavanaApartment/renders/Image_5.webp",
           alt: "Sadbhavana Apartment 3D render - elegant space",
           name: "Elegant Space",
           description: "Elegant interior design",
           context: "Luxury interiors"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Image.png",
+          src: "/images/SadbhavanaApartment/renders/Image.webp",
           alt: "Sadbhavana Apartment 3D render - apartment view",
           name: "Apartment View",
           description: "Complete apartment visualization",
           context: "Full apartment design"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 1_1.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 1_1.webp",
           alt: "Sadbhavana Apartment scene 1",
           name: "Scene 1",
           description: "3D render scene 1",
           context: "Design visualization"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 2.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 2.webp",
           alt: "Sadbhavana Apartment scene 2",
           name: "Scene 2",
           description: "3D render scene 2",
           context: "Interior scene"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 4.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 4.webp",
           alt: "Sadbhavana Apartment scene 4",
           name: "Scene 4",
           description: "3D render scene 4",
           context: "Design scene"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 5_3.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 5_3.webp",
           alt: "Sadbhavana Apartment scene 5",
           name: "Scene 5",
           description: "3D render scene 5",
           context: "Interior visualization"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 6.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 6.webp",
           alt: "Sadbhavana Apartment scene 6",
           name: "Scene 6",
           description: "3D render scene 6",
           context: "Design perspective"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 7.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 7.webp",
           alt: "Sadbhavana Apartment scene 7",
           name: "Scene 7",
           description: "3D render scene 7",
           context: "Interior design"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 8.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 8.webp",
           alt: "Sadbhavana Apartment scene 8",
           name: "Scene 8",
           description: "3D render scene 8",
           context: "Design view"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 8_4.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 8_4.webp",
           alt: "Sadbhavana Apartment scene 8 variant",
           name: "Scene 8 Variant",
           description: "3D render scene 8 variant",
           context: "Alternative view"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 11_1.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 11_1.webp",
           alt: "Sadbhavana Apartment scene 11",
           name: "Scene 11",
           description: "3D render scene 11",
           context: "Interior scene"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 12.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 12.webp",
           alt: "Sadbhavana Apartment scene 12",
           name: "Scene 12",
           description: "3D render scene 12",
           context: "Design visualization"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 12_1.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 12_1.webp",
           alt: "Sadbhavana Apartment scene 12 variant",
           name: "Scene 12 Variant",
           description: "3D render scene 12 variant",
           context: "Alternative perspective"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 14.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 14.webp",
           alt: "Sadbhavana Apartment scene 14",
           name: "Scene 14",
           description: "3D render scene 14",
           context: "Interior design"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 14_1.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 14_1.webp",
           alt: "Sadbhavana Apartment scene 14 variant",
           name: "Scene 14 Variant",
           description: "3D render scene 14 variant",
           context: "Design view"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 42.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 42.webp",
           alt: "Sadbhavana Apartment scene 42",
           name: "Scene 42",
           description: "3D render scene 42",
           context: "Interior visualization"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 85.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 85.webp",
           alt: "Sadbhavana Apartment scene 85",
           name: "Scene 85",
           description: "3D render scene 85",
           context: "Design perspective"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/Scene 125.png",
+          src: "/images/SadbhavanaApartment/renders/Scene 125.webp",
           alt: "Sadbhavana Apartment scene 125",
           name: "Scene 125",
           description: "3D render scene 125",
           context: "Interior scene"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/12Image__4.png",
+          src: "/images/SadbhavanaApartment/renders/12Image__4.webp",
           alt: "Sadbhavana Apartment image 4",
           name: "Image 4",
           description: "3D render image 4",
           context: "Design visualization"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/12Scene 17_2.png",
+          src: "/images/SadbhavanaApartment/renders/12Scene 17_2.webp",
           alt: "Sadbhavana Apartment scene 17",
           name: "Scene 17",
           description: "3D render scene 17",
           context: "Interior design"
         },
         {
-          src: "/images/SadbhavanaApartment/renders/12Scene 19_1.png",
+          src: "/images/SadbhavanaApartment/renders/12Scene 19_1.webp",
           alt: "Sadbhavana Apartment scene 19",
           name: "Scene 19",
           description: "3D render scene 19",
@@ -777,13 +776,232 @@ export const sadbhavanaApartmentData = {
     },
     {
       name: "Progress Shots",
-      images: [],
-      available: false
+      images: [
+        {
+          src: "/images/SadbhavanaApartment/progress/WhatsApp%20Image%202025-12-02%20at%2010.28.15%20PM.webp",
+          alt: "3BHK apartment construction progress",
+          name: "Progress Phase 1",
+          description: "Initial construction and interior work",
+          context: "Early construction phase"
+        },
+        {
+          src: "/images/SadbhavanaApartment/progress/WhatsApp%20Image%202025-12-02%20at%2010.28.16%20PM.webp",
+          alt: "3BHK apartment interior progress",
+          name: "Progress Phase 2",
+          description: "Interior development in progress",
+          context: "Mid-construction phase"
+        },
+        {
+          src: "/images/SadbhavanaApartment/progress/WhatsApp%20Image%202025-12-02%20at%2010.28.16%20PM%20(1).webp",
+          alt: "3BHK apartment work in progress",
+          name: "Progress Phase 3",
+          description: "Ongoing interior work",
+          context: "Construction progress"
+        },
+        {
+          src: "/images/SadbhavanaApartment/progress/WhatsApp%20Image%202025-12-02%20at%2010.28.16%20PM%20(2).webp",
+          alt: "3BHK apartment construction details",
+          name: "Progress Phase 4",
+          description: "Detailed construction work",
+          context: "Interior development"
+        },
+        {
+          src: "/images/SadbhavanaApartment/progress/WhatsApp%20Image%202025-12-02%20at%2010.28.17%20PM.webp",
+          alt: "3BHK apartment finishing work",
+          name: "Progress Phase 5",
+          description: "Finishing work in progress",
+          context: "Near completion phase"
+        },
+        {
+          src: "/images/SadbhavanaApartment/progress/WhatsApp%20Image%202025-12-02%20at%2010.28.17%20PM%20(1).webp",
+          alt: "3BHK apartment interior finishing",
+          name: "Progress Phase 6",
+          description: "Interior finishing details",
+          context: "Final touches phase"
+        },
+        {
+          src: "/images/SadbhavanaApartment/progress/WhatsApp%20Image%202025-12-02%20at%2010.28.17%20PM%20(2).webp",
+          alt: "3BHK apartment final stages",
+          name: "Progress Phase 7",
+          description: "Final construction stages",
+          context: "Completion phase"
+        },
+        {
+          src: "/images/SadbhavanaApartment/progress/WhatsApp%20Image%202025-12-02%20at%2010.28.17%20PM%20(3).webp",
+          alt: "3BHK apartment near completion",
+          name: "Progress Phase 8",
+          description: "Project nearing completion",
+          context: "Final progress documentation"
+        }
+      ],
+      available: true
     },
     {
       name: "Final Execution",
-      images: [],
-      available: false
+      images: [
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.20%20PM.webp",
+          alt: "3BHK apartment completed living area",
+          name: "Living Room",
+          description: "Completed modern living room with contemporary design",
+          context: "Final living area"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.20%20PM%20(1).webp",
+          alt: "3BHK apartment living space",
+          name: "Living Space View",
+          description: "Elegant living space with premium finishes",
+          context: "Completed interior"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.21%20PM.webp",
+          alt: "3BHK apartment bedroom",
+          name: "Master Bedroom",
+          description: "Luxurious master bedroom with modern aesthetics",
+          context: "Bedroom interior"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.21%20PM%20(1).webp",
+          alt: "3BHK apartment bedroom view",
+          name: "Bedroom Design",
+          description: "Contemporary bedroom design with elegant finishes",
+          context: "Bedroom completion"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.21%20PM%20(2).webp",
+          alt: "3BHK apartment interior detail",
+          name: "Interior Detail",
+          description: "Detailed view of interior finishes",
+          context: "Quality craftsmanship"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.22%20PM.webp",
+          alt: "3BHK apartment dining area",
+          name: "Dining Area",
+          description: "Modern dining space with elegant design",
+          context: "Dining room"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.22%20PM%20(1).webp",
+          alt: "3BHK apartment kitchen",
+          name: "Kitchen",
+          description: "Contemporary kitchen with premium fittings",
+          context: "Kitchen interior"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.22%20PM%20(2).webp",
+          alt: "3BHK apartment kitchen view",
+          name: "Kitchen Design",
+          description: "Modern kitchen design with functional layout",
+          context: "Kitchen completion"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.22%20PM%20(3).webp",
+          alt: "3BHK apartment hallway",
+          name: "Hallway",
+          description: "Elegant hallway with modern lighting",
+          context: "Corridor design"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.23%20PM.webp",
+          alt: "3BHK apartment bathroom",
+          name: "Bathroom",
+          description: "Luxurious bathroom with premium fixtures",
+          context: "Bathroom interior"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.23%20PM%20(1).webp",
+          alt: "3BHK apartment bathroom design",
+          name: "Bathroom Detail",
+          description: "Modern bathroom design with elegant tiles",
+          context: "Bathroom completion"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.23%20PM%20(2).webp",
+          alt: "3BHK apartment guest room",
+          name: "Guest Bedroom",
+          description: "Comfortable guest bedroom with modern design",
+          context: "Guest room interior"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.23%20PM%20(3).webp",
+          alt: "3BHK apartment kids room",
+          name: "Kids Bedroom",
+          description: "Vibrant kids bedroom with playful design",
+          context: "Children's room"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.24%20PM.webp",
+          alt: "3BHK apartment balcony",
+          name: "Balcony",
+          description: "Cozy balcony space with modern furnishing",
+          context: "Outdoor space"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.24%20PM%20(1).webp",
+          alt: "3BHK apartment entrance",
+          name: "Entrance",
+          description: "Welcoming entrance with elegant design",
+          context: "Entry foyer"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.24%20PM%20(2).webp",
+          alt: "3BHK apartment storage",
+          name: "Storage Area",
+          description: "Functional storage solutions",
+          context: "Storage design"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.24%20PM%20(3).webp",
+          alt: "3BHK apartment lighting",
+          name: "Lighting Design",
+          description: "Modern lighting fixtures throughout",
+          context: "Lighting details"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.25%20PM.webp",
+          alt: "3BHK apartment ceiling design",
+          name: "Ceiling Detail",
+          description: "Contemporary ceiling design with false ceiling",
+          context: "Ceiling work"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.25%20PM%20(1).webp",
+          alt: "3BHK apartment flooring",
+          name: "Flooring",
+          description: "Premium flooring throughout the apartment",
+          context: "Floor finishes"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.25%20PM%20(2).webp",
+          alt: "3BHK apartment wall design",
+          name: "Wall Treatment",
+          description: "Elegant wall treatments and textures",
+          context: "Wall finishes"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.05.25%20PM%20(3).webp",
+          alt: "3BHK apartment furniture",
+          name: "Furniture",
+          description: "Custom furniture and fittings",
+          context: "Furniture installation"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.07.13%20PM.webp",
+          alt: "3BHK apartment overall view",
+          name: "Overall View",
+          description: "Complete apartment interior overview",
+          context: "Project completion"
+        },
+        {
+          src: "/images/SadbhavanaApartment/final/WhatsApp%20Image%202025-12-02%20at%2010.28.17%20PM.webp",
+          alt: "3BHK apartment final touches",
+          name: "Final Details",
+          description: "Final finishing touches and details",
+          context: "Project handover"
+        }
+      ],
+      available: true
     }
   ],
 
@@ -798,9 +1016,9 @@ export const sadbhavanaApartmentData = {
     {
       icon: "FaRulerCombined",
       title: "Project Size",
-      description: "15,000 sq ft",
+      description: "3 BHK",
       detail: "Total interior area",
-      value: "15,000 sq ft"
+      value: "3 BHK"
     },
     {
       icon: "FaHome",
@@ -827,10 +1045,280 @@ export const sadbhavanaApartmentData = {
 
   testimonial: {
     quote: "Outstanding interior design work! The 3D visualizations helped us visualize the final outcome perfectly. The execution matched the designs exactly. Beautiful work!",
-    author: "Apartment Owner",
+    author: "Sainath & Tejaswani",
     designation: "Residential Client",
     rating: 4.8,
     totalReviews: 7,
+    verified: true
+  }
+};
+
+// 2BHK Apartment Project Data
+export const twoBHKApartmentData = {
+  title: "2BHK Apartment Interior",
+  subtitle: "Contemporary 2BHK apartment interior design with modern finishes and smart space utilization",
+  completionDate: "Nov 2025",
+  projectType: "Residential Interior",
+  heroImage: "/images/2BHK/final/WhatsApp%20Image%202025-12-02%20at%2010.16.01%20PM.webp",
+  heroImageAlt: "2BHK apartment interior with contemporary design",
+
+  tags: ["Residential", "2BHK", "Interior Design", "Modern", "Apartment"],
+  industry: "Residential",
+  category: "Residential Interiors",
+  budget: "₹20-40 Lakhs",
+  teamSize: "8 members",
+
+  story: [
+    "This 2BHK apartment interior project in Patancheruvu showcases our ability to create beautiful, functional spaces within compact layouts.",
+    "The project involved complete interior design and execution for MS Ashwini, transforming the apartment with modern aesthetics and smart storage solutions.",
+    "Completed in just 3 months, we delivered a stunning transformation from concept to reality, maximizing every inch of space while maintaining an open, airy feel."
+  ],
+
+  designPhases: [
+    {
+      name: "Concept Sketches",
+      images: [],
+      available: false
+    },
+    {
+      name: "3D Renders",
+      images: [
+        {
+          src: "/images/2BHK/renders/Image.webp",
+          alt: "2BHK apartment 3D render - living area",
+          name: "Living Area Render",
+          description: "3D visualization of modern living space",
+          context: "Living room design"
+        },
+        {
+          src: "/images/2BHK/renders/2.webp",
+          alt: "2BHK apartment 3D render - interior view",
+          name: "Interior View",
+          description: "Interior space visualization",
+          context: "Interior design"
+        },
+        {
+          src: "/images/2BHK/renders/Scene%201_1.webp",
+          alt: "2BHK apartment scene 1",
+          name: "Scene 1",
+          description: "3D render scene 1",
+          context: "Design visualization"
+        },
+        {
+          src: "/images/2BHK/renders/Scene%201_12.webp",
+          alt: "2BHK apartment scene 1 variant",
+          name: "Scene 1 Variant",
+          description: "Alternative view of scene 1",
+          context: "Design perspective"
+        },
+        {
+          src: "/images/2BHK/renders/Scene%205_3.webp",
+          alt: "2BHK apartment scene 5",
+          name: "Scene 5",
+          description: "3D render scene 5",
+          context: "Interior visualization"
+        },
+        {
+          src: "/images/2BHK/renders/Scene%205_3r.webp",
+          alt: "2BHK apartment scene 5 revised",
+          name: "Scene 5 Revised",
+          description: "Revised 3D render scene 5",
+          context: "Design refinement"
+        },
+        {
+          src: "/images/2BHK/renders/Scene%207_1.webp",
+          alt: "2BHK apartment scene 7",
+          name: "Scene 7",
+          description: "3D render scene 7",
+          context: "Interior design"
+        },
+        {
+          src: "/images/2BHK/renders/Scene%207_1d.webp",
+          alt: "2BHK apartment scene 7 detail",
+          name: "Scene 7 Detail",
+          description: "Detailed view of scene 7",
+          context: "Design details"
+        },
+        {
+          src: "/images/2BHK/renders/Scene%209_1d.webp",
+          alt: "2BHK apartment scene 9",
+          name: "Scene 9",
+          description: "3D render scene 9",
+          context: "Interior scene"
+        },
+        {
+          src: "/images/2BHK/renders/Scene%2010_1.webp",
+          alt: "2BHK apartment scene 10",
+          name: "Scene 10",
+          description: "3D render scene 10",
+          context: "Design visualization"
+        },
+        {
+          src: "/images/2BHK/renders/Scene%2012_2.webp",
+          alt: "2BHK apartment scene 12",
+          name: "Scene 12",
+          description: "3D render scene 12",
+          context: "Interior design"
+        },
+        {
+          src: "/images/2BHK/renders/Scene%2014_3.webp",
+          alt: "2BHK apartment scene 14",
+          name: "Scene 14",
+          description: "3D render scene 14",
+          context: "Design view"
+        },
+        {
+          src: "/images/2BHK/renders/Scene%2015_1.webp",
+          alt: "2BHK apartment scene 15",
+          name: "Scene 15",
+          description: "3D render scene 15",
+          context: "Interior visualization"
+        },
+        {
+          src: "/images/2BHK/renders/Scene%2016.webp",
+          alt: "2BHK apartment scene 16",
+          name: "Scene 16",
+          description: "3D render scene 16",
+          context: "Design perspective"
+        }
+      ],
+      available: true
+    },
+    {
+      name: "Progress Shots",
+      images: [
+        {
+          src: "/images/2BHK/progress/WhatsApp%20Image%202025-12-07%20at%2011.52.45%20AM.webp",
+          alt: "2BHK apartment construction progress",
+          name: "Progress Phase 1",
+          description: "Initial construction and interior work",
+          context: "Early construction phase"
+        },
+        {
+          src: "/images/2BHK/progress/WhatsApp%20Image%202025-12-07%20at%2011.52.45%20AM%20(1).webp",
+          alt: "2BHK apartment interior progress",
+          name: "Progress Phase 2",
+          description: "Interior development in progress",
+          context: "Mid-construction phase"
+        },
+        {
+          src: "/images/2BHK/progress/WhatsApp%20Image%202025-12-07%20at%2011.52.45%20AM%20(2).webp",
+          alt: "2BHK apartment work in progress",
+          name: "Progress Phase 3",
+          description: "Ongoing interior work",
+          context: "Construction progress"
+        },
+        {
+          src: "/images/2BHK/progress/WhatsApp%20Image%202025-12-07%20at%2011.52.45%20AM%20(3).webp",
+          alt: "2BHK apartment finishing work",
+          name: "Progress Phase 4",
+          description: "Finishing work in progress",
+          context: "Near completion phase"
+        }
+      ],
+      available: true
+    },
+    {
+      name: "Final Execution",
+      images: [
+        {
+          src: "/images/2BHK/final/WhatsApp%20Image%202025-12-02%20at%2010.33.52%20PM.webp",
+          alt: "2BHK apartment completed living area",
+          name: "Living Room",
+          description: "Completed modern living room with contemporary design",
+          context: "Final living area"
+        },
+        {
+          src: "/images/2BHK/final/WhatsApp%20Image%202025-12-02%20at%2010.33.52%20PM%20(1).webp",
+          alt: "2BHK apartment living space",
+          name: "Living Space View",
+          description: "Elegant living space with premium finishes",
+          context: "Completed interior"
+        },
+        {
+          src: "/images/2BHK/final/WhatsApp%20Image%202025-12-02%20at%2010.33.53%20PM.webp",
+          alt: "2BHK apartment bedroom",
+          name: "Master Bedroom",
+          description: "Cozy master bedroom with modern aesthetics",
+          context: "Bedroom interior"
+        },
+        {
+          src: "/images/2BHK/final/WhatsApp%20Image%202025-12-02%20at%2010.33.53%20PM%20(1).webp",
+          alt: "2BHK apartment bedroom view",
+          name: "Bedroom Design",
+          description: "Contemporary bedroom design with elegant finishes",
+          context: "Bedroom completion"
+        },
+        {
+          src: "/images/2BHK/final/WhatsApp%20Image%202025-12-02%20at%2010.33.54%20PM.webp",
+          alt: "2BHK apartment kitchen",
+          name: "Kitchen",
+          description: "Modern kitchen with functional layout",
+          context: "Kitchen interior"
+        },
+        {
+          src: "/images/2BHK/final/WhatsApp%20Image%202025-12-02%20at%2010.33.54%20PM%20(1).webp",
+          alt: "2BHK apartment dining area",
+          name: "Dining Area",
+          description: "Compact dining space with smart design",
+          context: "Dining room"
+        },
+        {
+          src: "/images/2BHK/final/WhatsApp%20Image%202025-12-02%20at%2010.16.01%20PM.webp",
+          alt: "2BHK apartment overall view",
+          name: "Overall View",
+          description: "Complete apartment interior overview",
+          context: "Project completion"
+        }
+      ],
+      available: true
+    }
+  ],
+
+  highlights: [
+    {
+      icon: "FaClock",
+      title: "Timeline",
+      description: "3 months",
+      detail: "From design to completion",
+      value: "3 months"
+    },
+    {
+      icon: "FaRulerCombined",
+      title: "Project Size",
+      description: "2 BHK",
+      detail: "Compact apartment",
+      value: "2 BHK"
+    },
+    {
+      icon: "FaHome",
+      title: "Client Type",
+      description: "Residential",
+      detail: "Private apartment",
+      value: "Residential"
+    },
+    {
+      icon: "FaMapMarkerAlt",
+      title: "Location",
+      description: "Patancheruvu, Hyderabad",
+      detail: "Residential area",
+      value: "Patancheruvu"
+    },
+    {
+      icon: "FaHammer",
+      title: "Scope",
+      description: "Interior Design + Execution",
+      detail: "Complete interior solutions",
+      value: "Turnkey Interior"
+    }
+  ],
+
+  testimonial: {
+    quote: "Excellent work by Dimension DZine! They transformed my 2BHK apartment beautifully within the timeline. The design is modern, functional, and exactly what I wanted. Highly recommended!",
+    author: "MS Ashwini",
+    designation: "Homeowner",
+    rating: 4.9,
+    totalReviews: 8,
     verified: true
   }
 };
@@ -853,18 +1341,27 @@ export const projectsRegistry = [
     data: construction1Data,
     status: 'In Progress', // No final execution photos available
     featured: true,
-    portfolioCategory: 'Commercial', // Commercial or Residential (shown on card)
+    portfolioCategory: 'Residential', // Commercial or Residential (shown on card)
     services: ['Construction', '3D Visualization'], // Services filter
     location: 'Hyderabad, India'
   },
   {
-    id: 'sadbhavana-apartment',
+    id: '3bhk-apartment',
     data: sadbhavanaApartmentData,
-    status: 'In Progress', // No final execution photos available
+    status: 'Completed',
     featured: true,
     portfolioCategory: 'Residential', // Commercial or Residential (shown on card)
     services: ['Interior Design', '3D Visualization', 'Material Sourcing'], // Services filter
     location: 'Hyderabad, India'
+  },
+  {
+    id: '2bhk-apartment',
+    data: twoBHKApartmentData,
+    status: 'Completed',
+    featured: true,
+    portfolioCategory: 'Residential', // Commercial or Residential (shown on card)
+    services: ['Interior Design', '3D Visualization', 'Material Sourcing'], // Services filter
+    location: 'Patancheruvu, Hyderabad, India'
   }
   // ADD NEW PROJECTS HERE - they will automatically appear in portfolio
   // Example of how to add a new project:
@@ -890,7 +1387,7 @@ export const newProjectData = {
   subtitle: "Brief project description",
   completionDate: "Month Year", // e.g., "March 2024"
   projectType: "Project Type", // e.g., "Office Interior"
-  heroImage: "/images/your-hero-image.jpg",
+  heroImage: "/images/your-hero-image.webp",
   heroImageAlt: "Alt text for your hero image",
   
   tags: ["Tag1", "Tag2", "Tag3"],
@@ -985,6 +1482,7 @@ export const portfolioProjects = projectsRegistry.map(project => {
     year: data.completionDate.split(' ')[1],
     location: project.location,
     completionDate: data.completionDate,
+    completionByDate: data?.completionByDate,
     timeline: timelineHighlight?.description || 'N/A',
     size: sizeHighlight?.description || 'N/A',
     budget: data.budget || 'Contact for quote',

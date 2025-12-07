@@ -7,6 +7,7 @@ import SEO from '../components/SEO';
 import { seoData } from '../config/seoData';
 import { portfolioProjects } from '../data/projects';
 import { ALL_SERVICES } from '../config/services';
+import { FaBuilding } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {
@@ -59,7 +60,18 @@ const Projects = () => {
         keywords={seoData.projects.keywords}
         canonical={seoData.projects.canonical}
         schema={seoData.projects.schema}
-        ogImage="/images/og-projects.jpg"
+        ogImage="/images/og-projects.webp"
+        itemList={{
+          name: 'Interior Design Projects Portfolio',
+          description: 'Complete portfolio of interior design and construction projects in Hyderabad',
+          items: allProjects.slice(0, 20).map(project => ({
+            type: 'CreativeWork',
+            name: project.title,
+            description: project.description,
+            image: project.image,
+            url: project.link,
+          })),
+        }}
       />
       <div className="page-wrapper-2">
         <Header />
@@ -69,7 +81,7 @@ const Projects = () => {
         <section className="portfolio-hero">
           <div className="container">
             <div className="portfolio-hero-content">
-              <h1 className="portfolio-hero-title">Our Projects</h1>
+              <h1 className="portfolio-hero-title">OUR PROJECTS</h1>
               <p className="portfolio-hero-subtitle">
                 Discover our portfolio of exceptional projects that showcase our expertise in 
                 interior design, construction, and innovative solutions.
@@ -106,7 +118,7 @@ const Projects = () => {
                     <div className="portfolio-overlay">
                       <div className="portfolio-status">
                         <span className={`portfolio-status-badge ${project.status.toLowerCase().replace(' ', '-')}`}>
-                          {project.status}
+                          {project.status.toUpperCase()}
                         </span>
                       </div>
                     </div>
@@ -150,6 +162,17 @@ const Projects = () => {
                   </div>
                 </div>
               ))}
+              <div className="portfolio-card portfolio-coming-soon-card">
+                <div className="portfolio-coming-soon-image">
+                  <FaBuilding className="portfolio-coming-soon-icon" />
+                </div>
+                <div className="portfolio-content">
+                  <div className="portfolio-coming-soon-content">
+                    <FaBuilding className="portfolio-coming-soon-icon-small" />
+                    <p className="portfolio-coming-soon-text">More projects coming soon</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

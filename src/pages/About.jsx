@@ -16,7 +16,7 @@ const About = () => {
         keywords={seoData.about.keywords}
         canonical={seoData.about.canonical}
         schema={seoData.about.schema}
-        ogImage="/images/og-about.jpg"
+        ogImage="/images/og-about.webp"
       />
       <div className="page-wrapper-2">
         <Header />
@@ -41,51 +41,38 @@ const About = () => {
               <div className="intro-content">
                 <h2 className="section-title-simple">Who We Are</h2>
                 <p className="intro-text">
-                  We're a Hyderabad-based interior design and construction firm with 8+ years of experience.
+                  We're a Hyderabad-based interior design and construction firm with 10+ years of experience.
                   We believe great design shouldn't break the bank—so we deliver premium quality at prices that work for you.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Partners/Founders */}
-          <section className="partners-section">
+          {/* Founder Section */}
+          <section className="founder-section">
             <div className="container-large">
-              <h2 className="section-title-simple">Our Founders</h2>
-              <div className="partners-grid">
-
-                {/* Partner 1 */}
-                <div className="partner-card">
-                  <div className="partner-image">
+              <h2 className="section-title-simple">Meet Our Founder</h2>
+              <div className="founder-container">
+                <div className="founder-card">
+                  <div className="founder-image">
                     <LazyImage
-                      src="/images/team/founder-1.jpg"
-                      alt="Co-Founder & Lead Designer"
-                      className="partner-photo"
+                      src="/images/About/WhatsApp%20Image%202025-12-07%20at%2011.46.24%20AM.webp"
+                      alt="Rakesh Kote - Founder & Lead Designer"
+                      className="founder-photo"
                     />
                   </div>
-                  <div className="partner-info">
-                    <h3 className="partner-name">Rajesh Kumar</h3>
-                    <p className="partner-role">Co-Founder & Lead Designer</p>
-                    <p className="partner-exp">12+ Years Experience</p>
+                  <div className="founder-info">
+                    <h3 className="founder-name">Rakesh Kote</h3>
+                    <p className="founder-role">Founder & Lead Designer</p>
+                    <p className="founder-exp">10+ Years Experience</p>
+                    <p className="founder-description">
+                      With a decade of experience in interior design and construction, Rakesh has transformed 
+                      hundreds of spaces across Hyderabad. Passionate about creating beautiful, functional spaces 
+                      that don't compromise on quality or budget, he leads Dimensions DZINE with a vision to make 
+                      premium design accessible to everyone.
+                    </p>
                   </div>
                 </div>
-
-                {/* Partner 2 */}
-                <div className="partner-card">
-                  <div className="partner-image">
-                    <LazyImage
-                      src="/images/team/founder-2.jpg"
-                      alt="Co-Founder & Architect"
-                      className="partner-photo"
-                    />
-                  </div>
-                  <div className="partner-info">
-                    <h3 className="partner-name">Priya Sharma</h3>
-                    <p className="partner-role">Co-Founder & Architect</p>
-                    <p className="partner-exp">10+ Years Experience</p>
-                  </div>
-                </div>
-
               </div>
             </div>
           </section>

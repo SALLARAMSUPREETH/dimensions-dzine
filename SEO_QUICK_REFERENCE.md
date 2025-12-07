@@ -18,7 +18,7 @@ const YourPage = () => {
         description="Your compelling description that makes people want to click (150-160 chars)"
         keywords="keyword1, keyword2, keyword3, location-based keywords"
         canonical="/your-page-url"
-        ogImage="/images/your-og-image.jpg"
+        ogImage="/images/your-og-image.webp"
         schema={{
           '@context': 'https://schema.org',
           '@type': 'WebPage',
@@ -266,7 +266,7 @@ const NewPage = () => {
         description="Compelling description that makes people want to click and visit your page."
         keywords="keyword1, keyword2, Hyderabad, Telangana"
         canonical="/new-page"
-        ogImage="/images/new-page-og.jpg"
+        ogImage="/images/new-page-og.webp"
       />
       {/* Your content */}
     </>

@@ -134,14 +134,14 @@
   font-weight: 600;
 }
 
-/* Partners Section - With visual separation */
-.partners-section {
+/* Founder Section - Single Founder Layout */
+.founder-section {
   padding: 4rem 0;
   background: #f8f6f1;
   position: relative;
 }
 
-.partners-section::before {
+.founder-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -153,72 +153,75 @@
   background: linear-gradient(to right, transparent, #d1d5db, transparent);
 }
 
-.partners-section .section-title-simple {
+.founder-section .section-title-simple {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+.founder-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-.partner-card {
+.founder-card {
   background: white;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   border: 1px solid transparent;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
 }
 
-.partner-card:hover {
+.founder-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 40px rgba(84, 103, 54, 0.15);
   border-color: rgba(84, 103, 54, 0.1);
 }
 
-.partner-image {
+.founder-image {
   width: 100%;
-  height: 400px;
+  height: 100%;
+  min-height: 500px;
   overflow: hidden;
   background: linear-gradient(135deg, #f8f6f1 0%, #e8e6e1 100%);
 }
 
-.partner-photo {
+.founder-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.partner-card:hover .partner-photo {
+.founder-card:hover .founder-photo {
   transform: scale(1.05);
 }
 
-.partner-info {
-  padding: 2rem;
-  text-align: center;
+.founder-info {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.partner-name {
+.founder-name {
   font-family: 'Sentient', serif;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #2d3748;
   margin-bottom: 0.5rem;
   transition: color 0.3s ease;
 }
 
-.partner-card:hover .partner-name {
+.founder-card:hover .founder-name {
   color: #546736;
 }
 
-.partner-role {
+.founder-role {
   font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
@@ -226,7 +229,7 @@
   margin-bottom: 0.5rem;
 }
 
-.partner-exp {
+.founder-exp {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   color: #c9a961;
@@ -235,7 +238,15 @@
   padding: 0.25rem 0.75rem;
   background: rgba(201, 169, 97, 0.1);
   border-radius: 20px;
-  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.founder-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.8;
+  margin-top: 1rem;
 }
 
 /* What We Do Section - With visual separation */
@@ -438,14 +449,20 @@
     text-align: left;
   }
 
-  .partners-grid {
+  .founder-card {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 0 1.5rem;
   }
 
-  .partner-image {
-    height: 350px;
+  .founder-image {
+    min-height: 400px;
+  }
+
+  .founder-info {
+    padding: 2rem 1.5rem;
+  }
+
+  .founder-name {
+    font-size: 1.75rem;
   }
 
   .services-simple-grid {
@@ -496,16 +513,20 @@
     text-align: left;
   }
 
-  .partner-image {
-    height: 300px;
+  .founder-image {
+    min-height: 350px;
   }
 
-  .partner-info {
+  .founder-info {
     padding: 1.5rem;
   }
 
-  .partner-name {
+  .founder-name {
     font-size: 1.5rem;
+  }
+
+  .founder-description {
+    font-size: 0.9375rem;
   }
 
   .services-simple-grid {

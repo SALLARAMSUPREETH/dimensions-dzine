@@ -19,7 +19,7 @@ const Visualization3D = () => {
         description={serviceSeoData.visualization3D.description}
         keywords={serviceSeoData.visualization3D.keywords}
         canonical={serviceSeoData.visualization3D.canonical}
-        ogImage="/images/services/3d-visualization-og.jpg"
+        ogImage="/images/services/3d-visualization-og.webp"
       />
       <div className="page-wrapper-2">
         <Header />
@@ -51,7 +51,7 @@ const Visualization3D = () => {
                 </div>
                 <div className="intro-image-wrapper">
                   <LazyImage
-                    src="/images/services/3d - services.jpg"
+                    src="/images/services/3d - services.webp"
                     alt="3D Visualization Services"
                     className="intro-image"
                   />
@@ -186,8 +186,8 @@ const Visualization3D = () => {
                   <Link to="/contact" className="btn-primary-construction">
                     Get Your 3D Rendering
                   </Link>
-                  <Link to="/calculator" className="btn-secondary-construction">
-                    Calculate Cost
+                  <Link to="/portfolio" className="btn-secondary-construction">
+                    Our Work
                   </Link>
                 </div>
               </div>
